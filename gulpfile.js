@@ -148,6 +148,7 @@ gulp.task('webserver', function() {
 // run all tasks
 gulp.task('run', gulp.series('html', 'css', 'js', 'js-plugins', 'webserver'));
 
+// new watch method
 var cssWatcher = gulp.watch(folder.src + '_assets/scss/*', gulp.parallel('css'));
 cssWatcher.on('all', function(event) {
   console.log('CSS watch: ' + event);
@@ -175,26 +176,9 @@ var jsWatcher = gulp.watch(folder.src + '_assets/js/*', gulp.parallel('js'));
 jsWatcher.on('all', function(event) {
   console.log('JS watch: ' + event);
 })
-// // // watch for changes
-// gulp.task('watch', function() {
 
-//   // image changes
-//   gulp.watch(folder.src + '_assets/template-images/**/*', gulp.series('images'));
+// end new watch method
 
-//   // html changes
-//   gulp.watch(folder.src + 'templates/**/*', gulp.series('html'));
-
-//   // javascript changes
-//   gulp.watch(folder.src + '_assets/js/plugins/*', gulp.series('js-plugins'));
-//   gulp.watch(folder.src + '_assets/js/*', ['js']);
-
-//   // css changes
-//   //gulp.watch(folder.src + '_assets/scss/bootstrap4/**/*', ['bootstrap-css']);
-//   gulp.watch(folder.src + '_assets/scss/*', gulp.series('css'));
-
-// });
-
-// default task
 gulp.task('default', gulp.series('run'));
 
 
