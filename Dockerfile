@@ -1,3 +1,2 @@
-FROM php:7.0-apache
-COPY dist/ /var/www/html
-EXPOSE 80
+FROM httpd:2.4
+COPY ./dist/ /usr/local/apache2/htdocs/
