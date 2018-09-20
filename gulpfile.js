@@ -141,7 +141,7 @@ gulp.task('webserver', function() {
         enabled: true
       }, 
       open: 'http://localhost:8888/templates/',
-      port: 8888,
+      port: process.env.PORT || 8888,
     }))
 });
 
