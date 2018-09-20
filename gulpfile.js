@@ -39,7 +39,7 @@ gulp.task('images', function() {
 // HTML processing
 gulp.task('html', gulp.series('images', function() {
   var
-    out = folder.dist + 'templates/',
+    out = folder.dist,
     page = gulp.src(folder.src + 'templates/**/*')
       .pipe(newer(out));
 
@@ -140,13 +140,13 @@ gulp.task('webserver', function() {
       livereload: {
         enabled: true
       }, 
-      open: 'http://localhost:8888/templates/',
+      open: 'http://localhost:8888/',
       port: process.env.PORT || 8888,
     }))
 });
 
 // run all tasks
-gulp.task('run', gulp.series('html', 'css', 'js', 'js-plugins', 'webserver'));
+gulp.task('run', gulp.series('html', 'css', 'bootstrap-css', 'js', 'js-plugins', 'webserver'));
 
 // new watch method
 var cssWatcher = gulp.watch(folder.src + '_assets/scss/*', gulp.parallel('css'));
