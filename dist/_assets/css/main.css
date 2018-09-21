@@ -46,3 +46,42 @@ body {
     text-transform: uppercase; }
     .top-menu-section .right-nav .nav a {
       color: #3d84ff; }
+
+#carouselMasthead .carousel-item {
+  height: 600px; }
+  #carouselMasthead .carousel-item .container {
+    height: 100%; }
+  #carouselMasthead .carousel-item .content {
+    width: 33.33%;
+    font-size: 0.9375rem; }
+    #carouselMasthead .carousel-item .content h2 {
+      font-size: 2.1875rem;
+      font-family: 'gotham_boldregular', 'Open Sans', sans-serif;
+      text-transform: uppercase; }
+      #carouselMasthead .carousel-item .content h2 span {
+        font-size: 0.57142857em;
+        display: block;
+        font-family: 'gotham_bookregular', 'Open Sans', sans-serif; }
+  #carouselMasthead .carousel-item.carousel-item-1 {
+    background: #f6f6f6;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(50%, #f6f6f6), color-stop(50%, #007a33), color-stop(100%, #007a33));
+    background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 50%, #007a33 50%, #007a33 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 ); }
+    #carouselMasthead .carousel-item.carousel-item-1 .d-flex {
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: 100%; }
+    #carouselMasthead .carousel-item.carousel-item-1 .content-1 {
+      color: #007a33;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      padding-top: 120px; }
+    #carouselMasthead .carousel-item.carousel-item-1 .image {
+      width: 33%; }
+    #carouselMasthead .carousel-item.carousel-item-1 .content-2 {
+      color: #fff;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      padding-bottom: 60px; }
