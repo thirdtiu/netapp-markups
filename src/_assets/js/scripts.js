@@ -1,4 +1,7 @@
-
 $(document).ready(function() {
-  // alert('sss');
+  $('.nav-slider').slick({
+    dots: false,
+    infinite: false, 
+    variableWidth: true
+  });
 });
