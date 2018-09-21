@@ -25,3 +25,24 @@ body {
   font-weight: bold; }
   .top-menu-mini-section .nav a {
     color: #636363; }
+
+.top-menu-section {
+  font-size: .8125em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+  .top-menu-section .navbar {
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .top-menu-section .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .top-menu-section .nav a {
+    color: #636363; }
+    .top-menu-section .nav a:hover, .top-menu-section .nav a:active {
+      color: #022057; }
+  .top-menu-section .right-nav .nav {
+    border-right: 1px solid #ececec;
+    text-transform: uppercase; }
+    .top-menu-section .right-nav .nav a {
+      color: #3d84ff; }

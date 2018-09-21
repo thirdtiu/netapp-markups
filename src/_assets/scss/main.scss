@@ -20,6 +20,8 @@
 // @import "slick";
 
 $netapp-gray: #636363;
+$netapp-gray-hovered: #022057;
+$netapp-blue: #3d84ff;
 
 /**UTILITIES**/
 img{
@@ -43,3 +45,38 @@ body{
 	}
 }
 // end top menu mini section
+
+// start top main section
+.top-menu-section{
+	font-size: .8125em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	.navbar {
+		background-color: #fff;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.navbar-brand {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.nav {
+		a {
+			color: $netapp-gray;
+			&:hover,
+			&:active {
+				color: $netapp-gray-hovered;
+			}
+		}
+	}
+	.right-nav {
+		.nav {
+			border-right: 1px solid #ececec;
+			text-transform: uppercase;
+			a {
+				color: $netapp-blue;
+			}
+		}
+	}
+}
+// end top main section
