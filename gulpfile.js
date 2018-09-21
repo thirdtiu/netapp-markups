@@ -185,6 +185,6 @@ gulp.task('default', gulp.series('run'));
 // Fonts
 gulp.task('fonts', function() {
     return gulp.src([
-              'src/_assets/bootstrap/assets/fonts/bootstrap/*'])
+              'src/_assets/fonts/*'])
       .pipe(gulp.dest('dist/_assets/fonts/'));
 });

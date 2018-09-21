@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'gotham_bookregular';
+  src: url("../fonts/ufonts.com_gotham-book-webfont.woff2") format("woff2"), url("../fonts/ufonts.com_gotham-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gotham_boldregular';
+  src: url("../fonts/gotham_bold_regular-webfont.woff2") format("woff2"), url("../fonts/gotham_bold_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /**UTILITIES**/
 img {
   max-width: 100%; }
