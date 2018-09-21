@@ -19,6 +19,8 @@
 // @import "mmenu.all";
 // @import "slick";
 
+$netapp-gray: #636363;
+
 /**UTILITIES**/
 img{
 	max-width: 100%;
@@ -26,3 +28,18 @@ img{
 body{
 	background: #f6f6f6;
 }
+
+// start top menu mini section
+.top-menu-mini-section {
+	background: #fff;
+	border-bottom: 1px solid #ececec;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.6875em;
+	font-weight: bold;
+	.nav {
+		a {
+			color: $netapp-gray;
+		}
+	}
+}
+// end top menu mini section

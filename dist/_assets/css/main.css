@@ -16,3 +16,12 @@ img {
 
 body {
   background: #f6f6f6; }
+
+.top-menu-mini-section {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6875em;
+  font-weight: bold; }
+  .top-menu-mini-section .nav a {
+    color: #636363; }
