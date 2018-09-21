@@ -130,3 +130,6 @@ body {
       -ms-flex-item-align: end;
           align-self: flex-end;
       padding-bottom: 60px; }
+
+.sticky-navbar-section {
+  background-color: #fff; }
