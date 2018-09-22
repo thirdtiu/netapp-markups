@@ -275,6 +275,7 @@ body {
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
   background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+  padding: 147px 0;
   position: relative; }
   .section-advantages::after {
     content: ' ';
@@ -285,3 +286,19 @@ body {
     background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
     background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
+  .section-advantages h1 {
+    color: #0067c5;
+    font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 2.3rem;
+    margin-bottom: 7rem; }
+  .section-advantages h2 {
+    font-size: 1.6rem; }
+  .section-advantages .box:first-child {
+    text-align: left;
+    padding-right: 160px; }
+  .section-advantages .box:last-child {
+    text-align: right;
+    padding-left: 160px;
+    color: #fff; }

@@ -277,6 +277,7 @@ body{
 	background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
 	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+	padding: 147px 0;
 
 	position: relative;
 	&::after {
@@ -291,6 +292,28 @@ body{
 		background: -ms-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
 		background: linear-gradient(to right, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+	}
+
+	h1 {
+		color: $blue;
+		font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
+		text-transform: uppercase;
+		line-height: 1;
+		font-size: 2.3rem;
+		margin-bottom: 7rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+	.box:first-child {
+		text-align: left;
+		padding-right: 160px;
+	}
+	.box:last-child {
+		text-align: right;
+		padding-left: 160px;
+		color: #fff;
 	}
 }
 // end advantages section
