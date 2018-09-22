@@ -197,5 +197,35 @@ body{
 // start sticky navbar
 .sticky-navbar-section {
 	background-color: #fff;
+	border-bottom: 8px solid #afafaf;
+}
+.nav-slider {
+	position: relative;	
+	.nav {
+		justify-content: space-between;
+		align-items: center;
+		a:hover {
+			color: $blue !important;
+		}
+		li > a:not(.btn-outline-primary) {
+			padding-top: 1.75rem;
+			padding-bottom: 1.75rem;
+			color: #000;
+			font-weight: bold;
+		}
+		.btn-outline-primary {
+			font-weight: bold;
+		}
+		.dropdown-menu {
+			min-width: 20rem;
+			a {
+				padding-top: 1.5rem;
+				padding-bottom: 1.5rem;
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}
 }
 // end sticky navbar

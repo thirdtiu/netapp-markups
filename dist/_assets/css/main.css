@@ -216,4 +216,29 @@ body {
       padding-bottom: 60px; }
 
 .sticky-navbar-section {
-  background-color: #fff; }
+  background-color: #fff;
+  border-bottom: 8px solid #afafaf; }
+
+.nav-slider {
+  position: relative; }
+  .nav-slider .nav {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nav-slider .nav a:hover {
+      color: #0067c5 !important; }
+    .nav-slider .nav li > a:not(.btn-outline-primary) {
+      padding-top: 1.75rem;
+      padding-bottom: 1.75rem;
+      color: #000;
+      font-weight: bold; }
+    .nav-slider .nav .btn-outline-primary {
+      font-weight: bold; }
+    .nav-slider .nav .dropdown-menu {
+      min-width: 20rem; }
+      .nav-slider .nav .dropdown-menu a {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem; }
+        .nav-slider .nav .dropdown-menu a:hover {
+          background-color: transparent; }
