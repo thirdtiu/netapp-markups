@@ -268,3 +268,29 @@ body{
 	}
 }
 // end ontap cloud feature
+
+// start advantages section
+.section-advantages {
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(50%, $blue), color-stop(100%, $blue));
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+	background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+
+	position: relative;
+	&::after {
+		content: ' ';
+		width: 100%;
+		height: 9px;
+		top:-9px;
+		position: absolute;
+		background: -webkit-gradient(left top, right top, color-stop(0%, $blue), color-stop(50%, $blue), color-stop(50%, #fff), color-stop(100%, #fff));
+		background: -webkit-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+		background: -o-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+		background: -ms-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+		background: linear-gradient(to right, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+	}
+}
+// end advantages section
