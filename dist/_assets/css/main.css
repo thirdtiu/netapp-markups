@@ -218,6 +218,12 @@ body {
 .sticky-navbar-section {
   background-color: #fff;
   border-bottom: 8px solid #afafaf; }
+  .sticky-navbar-section.affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; }
 
 .nav-slider {
   position: relative; }
