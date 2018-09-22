@@ -244,9 +244,23 @@ body {
           background-color: transparent; }
 
 .section-about {
+  background: #fff;
   padding: 115px 0; }
   .section-about h1 {
     font-size: 2.6rem; }
   .section-about .row {
     -ms-flex-align: center;
         align-items: center; }
+
+.section-feature {
+  padding: 125px 0; }
+  .section-feature h1 {
+    font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
+    font-size: 2.1875rem;
+    text-transform: uppercase; }
+  .section-feature h2 {
+    font-size: 1.5625rem; }
+  .section-feature .feature {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px; }

@@ -232,6 +232,7 @@ body{
 
 // start about section
 .section-about {
+	background: #fff;
 	padding: 115px 0;
 	h1 {
 		font-size: 2.6rem;
@@ -241,3 +242,22 @@ body{
 	}
 }
 // end about section
+
+// start ontap cloud feature
+.section-feature{
+	padding: 125px 0;
+	h1 {
+		font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
+		font-size: 2.1875rem;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 1.5625rem;
+	}
+	.feature {
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+// end ontap cloud feature
