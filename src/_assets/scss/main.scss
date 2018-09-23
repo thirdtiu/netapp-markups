@@ -384,3 +384,26 @@ a:hover {
 	}
 }
 // end webinar section
+
+// start resource section
+.section-resource {
+	padding-top: 160px;
+	padding-bottom: 57px;
+	.container {
+		background: #fff;
+		border-bottom: 10px solid $blue;
+	}
+	.content {
+		padding: 90px 90px;
+		h2 {
+			margin: 0;
+			font-size: 1rem;
+			text-transform: uppercase;
+			color: #969696;
+		}
+		h1 {
+			font-size: 1.75rem;
+		}
+	}	
+}
+// end resource section

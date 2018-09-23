@@ -358,3 +358,19 @@ a:hover {
     margin-left: 60px; }
   .section-webinar h1 {
     font-size: 2.6875rem; }
+
+.section-resource {
+  padding-top: 160px;
+  padding-bottom: 57px; }
+  .section-resource .container {
+    background: #fff;
+    border-bottom: 10px solid #0067c5; }
+  .section-resource .content {
+    padding: 90px 90px; }
+    .section-resource .content h2 {
+      margin: 0;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #969696; }
+    .section-resource .content h1 {
+      font-size: 1.75rem; }

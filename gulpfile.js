@@ -149,7 +149,7 @@ gulp.task('webserver', function() {
 gulp.task('run', gulp.series('html', 'css', 'bootstrap-css', 'js', 'js-plugins', 'webserver'));
 
 // new watch method
-var cssWatcher = gulp.watch(folder.src + '_assets/scss/*', gulp.parallel('css'));
+var cssWatcher = gulp.watch(folder.src + '_assets/scss/**', gulp.parallel('css'));
 cssWatcher.on('all', function(event) {
   console.log('CSS watch: ' + event);
 });

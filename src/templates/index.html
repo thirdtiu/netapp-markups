@@ -224,7 +224,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Start Free Trial</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#freeTrialModal">Start Free Trial</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Register for Webinar</a>
@@ -558,7 +558,7 @@
             <h1>Sign Up for a free trial</h1>
           </div>
           <p>Ready to buy Cloud Volumes ONTAP? Try it for yourself with our 30-day free trial.</p>
-          <p><a href="#">Try Now On AWS Marketplace</a></p>
+          <p><a href="#" data-toggle="modal" data-target="#exampleModal">Try Now On AWS Marketplace</a></p>
         </div>
       </div>
     </section>
@@ -614,6 +614,28 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- start modal free trial -->
+    <div class="modal fade" id="freeTrialModal" tabindex="-1" role="dialog" aria-labelledby="freeTrialModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="freeTrialModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal free trial -->
   </div>
   <script type="text/javascript" src="_assets/js/plugins.js"></script>
   <script type="text/javascript" src="_assets/js/main.js"></script>
