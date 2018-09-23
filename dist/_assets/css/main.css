@@ -257,6 +257,10 @@ body {
   .section-about .row {
     -ms-flex-align: center;
         align-items: center; }
+  .section-about .video {
+    margin-right: 60px; }
+  .section-about .content {
+    margin-left: 60px; }
 
 .section-feature {
   padding: 125px 0; }
@@ -322,3 +326,29 @@ body {
         text-transform: uppercase;
         color: #969696;
         font-weight: bold; }
+
+.section-webinar {
+  padding: 90px 0; }
+  .section-webinar .row {
+    -ms-flex-align: center;
+        align-items: center; }
+  .section-webinar .video {
+    margin-right: 60px; }
+  .section-webinar .content {
+    margin-left: 60px; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
