@@ -31,6 +31,9 @@ img{
 body{
 	background: #f6f6f6;
 }
+a:hover {
+	text-decoration: none;
+}
 
 // start top menu mini section
 .top-menu-mini-section {
@@ -45,6 +48,18 @@ body{
 		}
 	}
 }
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe,
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+//** END UTITLITIES
+
 // end top menu mini section
 
 // start top main section
@@ -353,6 +368,7 @@ body{
 
 // start webinar section
 .section-webinar {
+	background: #fff;
 	padding: 90px 0;
 	.row {
 		align-items: center;
@@ -363,15 +379,8 @@ body{
 	.content {
 		margin-left: 60px;
 	}
-}
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
-.embed-container iframe,
-.embed-container object, 
-.embed-container embed { 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
+	h1 {
+		font-size: 2.6875rem;
+	}
 }
 // end webinar section
