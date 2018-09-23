@@ -317,3 +317,30 @@ body{
 	}
 }
 // end advantages section
+
+// start whitepaper section
+.section-whitepaper {
+	background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+	.box {
+		padding: 70px 50px;
+		width: 50%;
+		background-color: #fff;
+		.head-section {
+			margin-bottom: 2rem;
+			h1 {
+				font-size: 1.625rem;
+				line-height: 1;
+			}
+			h2 {
+				font-size: 1rem;
+				line-height: 1;
+				text-transform: uppercase;
+				color: #969696;
+				font-weight: bold;
+			}
+		}
+	}
+}
+// end whitepaper section

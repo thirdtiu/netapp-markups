@@ -302,3 +302,23 @@ body {
     text-align: right;
     padding-left: 160px;
     color: #fff; }
+
+.section-whitepaper {
+  background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
+  background-size: cover;
+  padding: 90px 0; }
+  .section-whitepaper .box {
+    padding: 70px 50px;
+    width: 50%;
+    background-color: #fff; }
+    .section-whitepaper .box .head-section {
+      margin-bottom: 2rem; }
+      .section-whitepaper .box .head-section h1 {
+        font-size: 1.625rem;
+        line-height: 1; }
+      .section-whitepaper .box .head-section h2 {
+        font-size: 1rem;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #969696;
+        font-weight: bold; }
