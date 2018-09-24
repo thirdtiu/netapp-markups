@@ -493,11 +493,16 @@ a:hover {
 footer {
   background-color: #444956;
   font-size: .75rem;
-  color: #fff; }
+  color: #fff;
+  padding: 26px 0; }
   footer a {
     color: #fff; }
   footer ul {
     margin: 0;
     padding: 0; }
   footer li {
-    list-style-type: none; }
+    list-style-type: none;
+    display: inline-block; }
+  footer .d-flex {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }

@@ -564,6 +564,7 @@ footer {
 	background-color: #444956;
 	font-size: .75rem;
 	color: #fff;
+	padding: 26px 0;
 	a {
 		color: #fff;
 	}
@@ -573,6 +574,10 @@ footer {
 	}
 	li {
 		list-style-type: none;
+		display: inline-block;
+	}
+	.d-flex {
+		justify-content: space-between;
 	}
 }
 // end footer 
