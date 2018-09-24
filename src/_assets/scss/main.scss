@@ -453,6 +453,10 @@ a:hover {
 .section-case-studies {
 	padding-top:90px;
 	display: flex;
+
+	h1 {
+		margin-bottom: 40px;
+	}
 	.multiple-items-carousel {
 		> div {
 			height: 100%;
@@ -510,3 +514,65 @@ a:hover {
 	}
 }
 // start case studies carousel
+
+// start section-free-trial
+.section-free-trial {
+	background: url(../template-images/bg-freetrial.jpg) center no-repeat;
+	background-size: cover;
+	margin-top: 140px;
+	padding: 90px 0;
+	.container {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.box {
+		padding: 70px 50px;
+		width: 50%;
+		background-color: #fff;
+		.head-section {
+			margin-bottom: 2rem;
+			h1 {
+				font-size: 1.625rem;
+				line-height: 1;
+			}
+			h2 {
+				font-size: 1rem;
+				line-height: 1;
+				text-transform: uppercase;
+				color: #969696;
+				font-weight: bold;
+			}
+		}
+	}
+}
+// end section-free-trial
+
+// start section-bottom
+.section-bottom {
+	padding: 65px 0;
+	.box {
+		padding: 0 120px;
+		h5 {
+			font-size: 1.75rem;
+		}
+	}
+}
+// end section-bottom
+
+// start footer
+footer {
+	background-color: #444956;
+	font-size: .75rem;
+	color: #fff;
+	a {
+		color: #fff;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+	}
+}
+// end footer 

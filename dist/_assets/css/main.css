@@ -411,6 +411,8 @@ a:hover {
   padding-top: 90px;
   display: -ms-flexbox;
   display: flex; }
+  .section-case-studies h1 {
+    margin-bottom: 40px; }
   .section-case-studies .multiple-items-carousel > div {
     height: 100%; }
   .section-case-studies .slick-slide {
@@ -454,3 +456,48 @@ a:hover {
         font-weight: normal; }
     .section-case-studies .card .card-body {
       padding: 35px 30px; }
+
+.section-free-trial {
+  background: url(../template-images/bg-freetrial.jpg) center no-repeat;
+  background-size: cover;
+  margin-top: 140px;
+  padding: 90px 0; }
+  .section-free-trial .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+  .section-free-trial .box {
+    padding: 70px 50px;
+    width: 50%;
+    background-color: #fff; }
+    .section-free-trial .box .head-section {
+      margin-bottom: 2rem; }
+      .section-free-trial .box .head-section h1 {
+        font-size: 1.625rem;
+        line-height: 1; }
+      .section-free-trial .box .head-section h2 {
+        font-size: 1rem;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #969696;
+        font-weight: bold; }
+
+.section-bottom {
+  padding: 65px 0; }
+  .section-bottom .box {
+    padding: 0 120px; }
+    .section-bottom .box h5 {
+      font-size: 1.75rem; }
+
+footer {
+  background-color: #444956;
+  font-size: .75rem;
+  color: #fff; }
+  footer a {
+    color: #fff; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
+  footer li {
+    list-style-type: none; }
