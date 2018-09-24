@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // start boostra affix replacement
   var toggleAffix = function(affixElement, scrollElement, wrapper) {
   
     var height = affixElement.outerHeight(),
@@ -28,4 +29,16 @@ $(document).ready(function() {
     // init
     toggleAffix(ele, $(window), wrapper);
   });
+
+  // end bootstrap affix replacement
+
+  $('.multiple-items-carousel').slick({
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    prevArrow: '<button type="button" class="slick-prev">&lt;</button>',
+    nextArrow: '<button type="button" class="slick-next">&gt;</button>',
+  })
+
+  
+
 });

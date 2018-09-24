@@ -450,3 +450,63 @@ a:hover {
 	}
 }
 // end section-whitepaper-solution
+.section-case-studies {
+	padding-top:90px;
+	display: flex;
+	.multiple-items-carousel {
+		> div {
+			height: 100%;
+			// padding: 18px;
+		}
+	}
+	.slick-slide {
+		// padding: 18px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.slick-track{
+		display: flex;
+		.slick-slide{
+				display: flex;
+				height: auto;
+				align-items: center; //optional
+				justify-content: center; //optional
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+		&.slick-prev {
+			left: -20px;
+		}
+		&.slick-next {
+			right: -20px;
+		}
+	}
+	.card {
+		height: 100%;
+		padding: 0;
+		border-bottom: 10px solid $blue;
+		.card-header {
+			background: transparent;
+			border-bottom: none;
+			padding: 0;
+			h6 {
+				text-transform: uppercase;
+				font-size: 1rem;
+				font-weight: normal;
+				color: #969696;
+				line-height: 1;
+			}
+			.card-title {
+				font-size: 1.75rem;
+				font-weight: normal;
+			}
+		}
+		.card-body {
+			padding: 35px 30px;
+		}
+	}
+}
+// start case studies carousel
