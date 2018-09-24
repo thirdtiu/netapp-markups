@@ -365,6 +365,8 @@ a:hover {
   .section-resource .container {
     background: #fff;
     border-bottom: 10px solid #0067c5; }
+  .section-resource .col-sm:first-child {
+    padding-left: 0; }
   .section-resource .content {
     padding: 90px 90px; }
     .section-resource .content h2 {
@@ -374,3 +376,33 @@ a:hover {
       color: #969696; }
     .section-resource .content h1 {
       font-size: 1.75rem; }
+
+.section-whitepaper-solution .whitepaper,
+.section-whitepaper-solution .solution {
+  height: 100%; }
+
+.section-whitepaper-solution .col-sm:first-child {
+  padding-left: 0; }
+
+.section-whitepaper-solution .col-sm:last-child {
+  padding-right: 0; }
+
+.section-whitepaper-solution .card {
+  height: 100%;
+  padding: 0;
+  border-bottom: 10px solid #0067c5; }
+  .section-whitepaper-solution .card .card-header {
+    background: transparent;
+    border-bottom: none;
+    padding: 0; }
+    .section-whitepaper-solution .card .card-header h6 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #969696;
+      line-height: 1; }
+    .section-whitepaper-solution .card .card-header .card-title {
+      font-size: 1.75rem;
+      font-weight: normal; }
+  .section-whitepaper-solution .card .card-body {
+    padding: 40px 50px; }
