@@ -42,8 +42,12 @@ $(document).ready(function() {
 
   // end slick carousel
 
-  if(window.location.href.indexOf('#whitepaperModal') != -1) {
+  if(window.location.href.indexOf('#whitepaper') != -1) {
     $('#whitepaperModal').modal('show');
+  }
+
+  if(window.location.href.indexOf('#free-trial') != -1) {
+    $('#freeTrialModal').modal('show');
   }
 
   

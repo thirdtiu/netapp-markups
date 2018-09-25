@@ -556,3 +556,45 @@ footer {
   border-radius: 100px;
   padding: 1rem 1.5rem;
   font-size: 1rem; }
+
+#freeTrialModal .modal-dialog {
+  max-width: 90% !important; }
+
+#freeTrialModal .col-sm {
+  padding-left: 0;
+  padding-right: 0; }
+
+#freeTrialModal .content {
+  padding: 100px 60px; }
+
+#freeTrialModal .content-1 {
+  height: 100%;
+  background: url(../template-images/bg-freetrialmodal.jpg) center no-repeat #0067c5;
+  background-size: cover;
+  color: #fff;
+  padding-right: 200px; }
+  #freeTrialModal .content-1 h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1; }
+  #freeTrialModal .content-1 h1 {
+    font-size: 2.1875rem;
+    line-height: 1;
+    margin-bottom: 1.5rem; }
+  #freeTrialModal .content-1 h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'gotham_boldregular', 'Open Sans', sans-serif; }
+  #freeTrialModal .content-1 h3 {
+    font-size: 1rem;
+    font-family: 'gotham_boldregular', 'Open Sans', sans-serif;
+    margin-bottom: 50px; }
+  #freeTrialModal .content-1 ul {
+    padding-left: 20px; }
+  #freeTrialModal .content-1 small {
+    font-size: 0.528125rem;
+    line-height: .75; }
+
+#freeTrialModal .content-2 .note {
+  font-size: .8125rem;
+  color: #353535; }
