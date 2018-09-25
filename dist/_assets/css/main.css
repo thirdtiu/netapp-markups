@@ -507,6 +507,52 @@ footer {
     -ms-flex-pack: justify;
         justify-content: space-between; }
 
+#whitepaperModal .modal-dialog {
+  max-width: 90% !important; }
+
+#whitepaperModal .col-sm {
+  padding-left: 0;
+  padding-right: 0; }
+
+#whitepaperModal .content {
+  padding: 100px 60px; }
+
 #whitepaperModal .content-1 {
+  height: 100%;
   background: #0067c5;
-  color: #fff; }
+  color: #fff;
+  padding-right: 200px; }
+  #whitepaperModal .content-1 h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1; }
+  #whitepaperModal .content-1 h1 {
+    font-size: 2.1875rem;
+    line-height: 1;
+    margin-bottom: 1.5rem; }
+  #whitepaperModal .content-1 h3 {
+    font-size: 1.375rem; }
+
+#whitepaperModal .content-2 .note {
+  font-size: .8125rem;
+  color: #353535; }
+
+.modal .modal-content > .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.modal form .row {
+  margin-bottom: 1rem; }
+
+.modal label {
+  color: #1f1f1f;
+  text-transform: uppercase;
+  font-size: .8125rem; }
+
+.modal .form-control {
+  border-color: #0067c5; }
+
+.modal .btn-rounded {
+  border-radius: 100px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem; }

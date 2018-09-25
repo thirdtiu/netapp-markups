@@ -584,9 +584,66 @@ footer {
 
 // whitepaper modal
 #whitepaperModal {
+	.modal-dialog {
+		max-width: 90% !important;
+	}
+	.col-sm {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.content {
+		padding: 100px 60px;
+	}
 	.content-1 {
+		height: 100%;
 		background: $blue;
 		color: #fff;
+		padding-right: 200px;
+		h5{
+			text-transform: uppercase;
+			font-size: 1rem;
+			line-height: 1;
+		}
+		h1 {
+			font-size: 2.1875rem;
+			line-height: 1;
+			margin-bottom: 1.5rem;
+		}
+		h3 {
+			font-size: 1.375rem;
+		}
+	}
+	.content-2 {
+		.note {
+			font-size: .8125rem;
+			color: #353535;
+		}
+	}
+}
+
+.modal {
+	.modal-content > .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	form {
+		.row {
+			margin-bottom: 1rem;
+		}
+	}
+	label {
+		color: #1f1f1f;
+		text-transform: uppercase;
+		font-size: .8125rem;
+	}
+	.form-control {
+		border-color: $blue;
+	}
+
+	.btn-rounded {
+		border-radius: 100px;
+		padding: 1rem 1.5rem;
+		font-size: 1rem;
 	}
 }
 
