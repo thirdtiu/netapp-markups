@@ -506,3 +506,7 @@ footer {
   footer .d-flex {
     -ms-flex-pack: justify;
         justify-content: space-between; }
+
+#whitepaperModal .content-1 {
+  background: #0067c5;
+  color: #fff; }

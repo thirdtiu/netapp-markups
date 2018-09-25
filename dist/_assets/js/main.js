@@ -32,12 +32,19 @@ $(document).ready(function() {
 
   // end bootstrap affix replacement
 
+  // slick carousel
   $('.multiple-items-carousel').slick({
     slidesToShow: 3,
     adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev">&lt;</button>',
     nextArrow: '<button type="button" class="slick-next">&gt;</button>',
   })
+
+  // end slick carousel
+
+  if(window.location.href.indexOf('#whitepaperModal') != -1) {
+    $('#whitepaperModal').modal('show');
+  }
 
   
 
