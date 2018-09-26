@@ -61,6 +61,13 @@ a:hover {
 	a.cloud {
 		background: url(../template-images/ic-cloud-story.svg) left no-repeat;
 	}
+	.dropdown-menu {
+		.dropdown-item {
+			font-size: 0.6875em;
+			padding: .5rem 1rem;
+		}
+	}
+
 }
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
 .embed-container iframe,

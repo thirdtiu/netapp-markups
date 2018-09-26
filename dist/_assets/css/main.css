@@ -3918,6 +3918,9 @@ a:hover {
     padding-right: 2.5rem; }
   .top-menu-mini-section a.cloud {
     background: url(../template-images/ic-cloud-story.svg) left no-repeat; }
+  .top-menu-mini-section .dropdown-menu .dropdown-item {
+    font-size: 0.6875em;
+    padding: .5rem 1rem; }
 
 .embed-container {
   position: relative;
