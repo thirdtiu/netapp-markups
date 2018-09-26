@@ -1,6 +1,7 @@
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "slick";
+@import "fa";//fontawesome
 
 @font-face {
 	font-family: 'gotham_bookregular';
@@ -34,6 +35,12 @@ body{
 a:hover {
 	text-decoration: none;
 }
+.dropdown-toggle::after {
+	border: none;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f078";
+	vertical-align: baseline;
+}
 
 // start top menu mini section
 .top-menu-mini-section {
@@ -46,6 +53,13 @@ a:hover {
 		a {
 			color: $netapp-gray;
 		}
+	}
+	a.assesment {
+		background: url(../template-images/ic-assess-header.svg) left no-repeat;
+		padding-right: 2.5rem;
+	}
+	a.cloud {
+		background: url(../template-images/ic-cloud-story.svg) left no-repeat;
 	}
 }
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }

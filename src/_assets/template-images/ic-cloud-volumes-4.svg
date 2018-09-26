@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>DE0408AA-9BC9-4BE7-924B-098DA9A75BB8</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header_guest_1920" transform="translate(-739.000000, -38.000000)">
+            <g transform="translate(0.000000, 6.000000)" id="Group-32">
+                <g>
+                    <g id="header">
+                        <g id="ic_cloud_volumes" transform="translate(739.000000, 32.000000)">
+                            <g id="Group-29">
+                                <g id="Group" transform="translate(9.375000, 6.750000)"></g>
+                                <circle id="Oval-8" fill="#48DDBA" cx="15" cy="15" r="15"></circle>
+                                <path d="M6.43285709,11.7857143 L21.9642857,11.7857143 L21.9642857,13.3928571 L6.43285709,13.3928571 C6.13462335,13.3928571 5.89285714,13.1510909 5.89285714,12.8528572 L5.89285714,12.3257142 C5.89285714,12.0274805 6.13462335,11.7857143 6.43285709,11.7857143 Z M11.0636077,15 L21.9642857,15 L21.9642857,16.6071429 L11.0636077,16.6071429 C10.765374,16.6071429 10.5236077,16.3653766 10.5236077,16.0671429 L10.5236077,15.5399999 C10.5236077,15.2417662 10.765374,15 11.0636077,15 Z M15.9667554,18.2142857 L21.9642857,18.2142857 L21.9642857,19.8214286 L15.9667554,19.8214286 C15.6685217,19.8214286 15.4267554,19.5796624 15.4267554,19.2814286 L15.4267554,18.7542857 C15.4267554,18.4560519 15.6685217,18.2142857 15.9667554,18.2142857 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" opacity="0.8"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
