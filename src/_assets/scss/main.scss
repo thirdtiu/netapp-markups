@@ -42,6 +42,18 @@ a:hover {
 	vertical-align: baseline;
 }
 
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe,
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+//** END UTITLITIES
+
 // start top menu mini section
 .top-menu-mini-section {
 	background: #fff;
@@ -70,17 +82,7 @@ a:hover {
 	}
 
 }
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
-.embed-container iframe,
-.embed-container object, 
-.embed-container embed { 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
-}
-//** END UTITLITIES
+
 
 // end top menu mini section
 
@@ -97,14 +99,41 @@ a:hover {
 	.navbar-brand {
 		padding-top: 0;
 		padding-bottom: 0;
+		img {
+			width:118px;
+		}
 	}
-	.nav {
-		a {
-			color: $netapp-gray;
-			&:hover,
-			&:active {
-				color: $netapp-gray-hovered;
+	.navbar-nav {
+		.nav-item {
+			margin-right: 15px;
+			&.dropdown {
+				margin-right: 25px;
 			}
+			&.kubernetes {
+				background: url(../template-images/ic-cloud-volumes-4.svg) left no-repeat;
+			}
+			&.volumes {
+				background: url(../template-images/header-cloud-volumes.svg) left no-repeat;
+			}
+			&.insights {
+				background: url(../template-images/header-cloud-insights.svg) left no-repeat;
+			}
+			&.sync {
+				background: url(../template-images/header-cloud-sync.svg) left no-repeat;
+			}
+			&.backup {
+				background: url(../template-images/header-saas-backup.svg) left no-repeat;
+			}
+			&.mongodb {
+				background: url(../template-images/header-mongo-db-1.svg) left no-repeat;
+			}
+		}
+		.nav-link {
+			padding-left: 35px;
+			padding-right: 0;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			color: #636363;
 		}
 	}
 	.right-nav {
@@ -114,6 +143,17 @@ a:hover {
 			a {
 				color: $netapp-blue;
 			}
+		}
+	}
+	.dropdown-menu {
+		border-radius: 0;
+		border: none;
+		border-top: 4px solid $blue;
+		.dropdown-item {
+			font-size: .8125em;
+			padding: .5rem 1rem;
+			font-weight: bold;
+			color: #636363;
 		}
 	}
 }

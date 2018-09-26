@@ -3905,6 +3905,22 @@ a:hover {
   content: "\f078";
   vertical-align: baseline; }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .top-menu-mini-section {
   background: #fff;
   border-bottom: 1px solid #ececec;
@@ -3924,22 +3940,6 @@ a:hover {
     font-size: 0.6875em;
     padding: .5rem 1rem; }
 
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%; }
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
 .top-menu-section {
   font-size: .8125em;
   font-family: 'Open Sans', sans-serif;
@@ -3951,15 +3951,44 @@ a:hover {
   .top-menu-section .navbar-brand {
     padding-top: 0;
     padding-bottom: 0; }
-  .top-menu-section .nav a {
+    .top-menu-section .navbar-brand img {
+      width: 118px; }
+  .top-menu-section .navbar-nav .nav-item {
+    margin-right: 15px; }
+    .top-menu-section .navbar-nav .nav-item.dropdown {
+      margin-right: 25px; }
+    .top-menu-section .navbar-nav .nav-item.kubernetes {
+      background: url(../template-images/ic-cloud-volumes-4.svg) left no-repeat; }
+    .top-menu-section .navbar-nav .nav-item.volumes {
+      background: url(../template-images/header-cloud-volumes.svg) left no-repeat; }
+    .top-menu-section .navbar-nav .nav-item.insights {
+      background: url(../template-images/header-cloud-insights.svg) left no-repeat; }
+    .top-menu-section .navbar-nav .nav-item.sync {
+      background: url(../template-images/header-cloud-sync.svg) left no-repeat; }
+    .top-menu-section .navbar-nav .nav-item.backup {
+      background: url(../template-images/header-saas-backup.svg) left no-repeat; }
+    .top-menu-section .navbar-nav .nav-item.mongodb {
+      background: url(../template-images/header-mongo-db-1.svg) left no-repeat; }
+  .top-menu-section .navbar-nav .nav-link {
+    padding-left: 35px;
+    padding-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: #636363; }
-    .top-menu-section .nav a:hover, .top-menu-section .nav a:active {
-      color: #022057; }
   .top-menu-section .right-nav .nav {
     border-right: 1px solid #ececec;
     text-transform: uppercase; }
     .top-menu-section .right-nav .nav a {
       color: #3d84ff; }
+  .top-menu-section .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    border-top: 4px solid #0067c5; }
+    .top-menu-section .dropdown-menu .dropdown-item {
+      font-size: .8125em;
+      padding: .5rem 1rem;
+      font-weight: bold;
+      color: #636363; }
 
 #carouselMasthead .carousel-item {
   height: 600px; }
