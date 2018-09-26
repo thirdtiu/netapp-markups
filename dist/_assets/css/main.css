@@ -3911,8 +3911,10 @@ a:hover {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.6875em;
   font-weight: bold; }
-  .top-menu-mini-section .nav a {
-    color: #636363; }
+  .top-menu-mini-section .nav {
+    margin-right: 1rem; }
+    .top-menu-mini-section .nav a {
+      color: #636363; }
   .top-menu-mini-section a.assesment {
     background: url(../template-images/ic-assess-header.svg) left no-repeat;
     padding-right: 2.5rem; }
