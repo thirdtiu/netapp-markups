@@ -310,6 +310,7 @@ a:hover {
 }
 .nav-slider {
 	position: relative;	
+	align-items: center;	
 	.nav {
 		justify-content: space-between;
 		align-items: center;
@@ -324,14 +325,29 @@ a:hover {
 		}
 		.btn-outline-primary {
 			font-weight: bold;
+			&:hover {
+				color: #fff !important;
+			}
 		}
 		.dropdown-menu {
 			min-width: 20rem;
+			box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+			border-radius: 0;
+			border: none;
+			border-top: 6px solid $blue;
 			a {
 				padding-top: 1.5rem;
 				padding-bottom: 1.5rem;
+				font-weight: bold;
 				&:hover {
 					background-color: transparent;
+					&:after {
+						content: '\f35a';
+						font-family: 'Font Awesome 5 Free';
+						margin-left: 5px;
+						position: relative;
+						top: 2px;
+					}
 				}
 			}
 		}
