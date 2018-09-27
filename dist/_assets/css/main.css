@@ -4028,6 +4028,8 @@ a:hover {
       -ms-flex-item-align: end;
           align-self: flex-end;
       padding-bottom: 60px; }
+    #carouselMasthead .carousel-item.carousel-item-1 .carousel-control-prev i {
+      color: #0067c5; }
   #carouselMasthead .carousel-item.carousel-item-2 {
     background: #f6f6f6;
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(50%, #f6f6f6), color-stop(50%, #007a33), color-stop(100%, #007a33));
@@ -4051,6 +4053,9 @@ a:hover {
       -ms-flex-item-align: end;
           align-self: flex-end;
       padding-bottom: 60px; }
+    #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
+    #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i {
+      margin-bottom: -66px; }
   #carouselMasthead .carousel-item.carousel-item-3 {
     background: -webkit-gradient(left top, right top, color-stop(0%, #f6f6f6), color-stop(50%, #f6f6f6), color-stop(50%, #7a4ba9), color-stop(100%, #7a4ba9));
     background: linear-gradient(to right, #f6f6f6 0%, #f6f6f6 50%, #7a4ba9 50%, #7a4ba9 100%);
@@ -4073,6 +4078,13 @@ a:hover {
       -ms-flex-item-align: end;
           align-self: flex-end;
       padding-bottom: 60px; }
+    #carouselMasthead .carousel-item.carousel-item-3 .carousel-control-prev i {
+      color: #7a4ba9; }
+
+#carouselMasthead .carousel-control-prev,
+#carouselMasthead .carousel-control-next {
+  font-size: 3.5rem;
+  opacity: 1; }
 
 .sticky-navbar-section {
   background-color: #fff;

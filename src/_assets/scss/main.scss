@@ -209,6 +209,11 @@ a:hover {
 				align-self: flex-end;
 				padding-bottom: 60px;
 			}
+			.carousel-control-prev {
+				i {
+					color: $blue;
+				}
+			}
 		}
 		&.carousel-item-2 {
 			background: rgba(246,246,246,1);
@@ -238,6 +243,12 @@ a:hover {
 				align-self: flex-end;
 				padding-bottom: 60px;
 			}
+			.carousel-control-prev,
+			.carousel-control-next {
+				i {
+					margin-bottom: -66px;
+				}
+			}
 		}
 		&.carousel-item-3 {
 			background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246,246,246,1)), color-stop(50%, rgba(246,246,246,1)), color-stop(50%, rgba(122,75,169,1)), color-stop(100%, rgba(122,75,169,1)));
@@ -265,8 +276,18 @@ a:hover {
 				align-self: flex-end;
 				padding-bottom: 60px;
 			}
+			.carousel-control-prev {
+				i {
+					color: #7a4ba9;
+				}
+			}
 
 		}
+	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		font-size: 3.5rem;
+		opacity: 1;
 	}
 }
 // end masthead carousel
