@@ -181,6 +181,9 @@ a:hover {
 				}
 			}
 		}
+		.content-1 {
+			text-align: right;
+		}
 		&.carousel-item-1 {
 			background: rgba(246,246,246,1);
 			background: -moz-linear-gradient(left, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 50%, rgba(0,102,197,1) 50%, rgba(0,102,197,1) 100%);
@@ -208,6 +211,7 @@ a:hover {
 				color: #fff;
 				align-self: flex-end;
 				padding-bottom: 60px;
+				padding-left: 20px;
 			}
 			.carousel-control-prev {
 				i {

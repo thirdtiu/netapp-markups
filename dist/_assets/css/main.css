@@ -4005,6 +4005,8 @@ a:hover {
         font-size: 0.57142857em;
         display: block;
         font-family: 'gotham_bookregular', 'Open Sans', sans-serif; }
+  #carouselMasthead .carousel-item .content-1 {
+    text-align: right; }
   #carouselMasthead .carousel-item.carousel-item-1 {
     background: #f6f6f6;
     background: -webkit-gradient(left top, right top, color-stop(0%, #f6f6f6), color-stop(50%, #f6f6f6), color-stop(50%, #0066c5), color-stop(100%, #0066c5));
@@ -4027,7 +4029,8 @@ a:hover {
       color: #fff;
       -ms-flex-item-align: end;
           align-self: flex-end;
-      padding-bottom: 60px; }
+      padding-bottom: 60px;
+      padding-left: 20px; }
     #carouselMasthead .carousel-item.carousel-item-1 .carousel-control-prev i {
       color: #0067c5; }
   #carouselMasthead .carousel-item.carousel-item-2 {
