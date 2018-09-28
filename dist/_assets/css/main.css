@@ -4225,6 +4225,20 @@ a:hover {
         text-transform: uppercase;
         color: #969696;
         font-weight: bold; }
+    .section-whitepaper .box p {
+      margin-bottom: 2rem; }
+    .section-whitepaper .box .logos {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+    .section-whitepaper .box .sep {
+      width: 6px;
+      height: 23px;
+      content: ' ';
+      background: #797b7d;
+      margin-right: 20px;
+      margin-left: 11px; }
 
 .section-webinar {
   background: #fff;

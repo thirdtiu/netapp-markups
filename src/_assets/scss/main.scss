@@ -481,6 +481,21 @@ a:hover {
 				font-weight: bold;
 			}
 		}
+		p {
+			margin-bottom: 2rem;
+		}
+		.logos {
+			display: flex;
+			align-items: center;
+		}
+		.sep {
+			width: 6px;
+			height: 23px;
+			content: ' ';
+			background: #797b7d;
+			margin-right: 20px;
+			margin-left: 11px;
+		}
 	}
 }
 // end whitepaper section
