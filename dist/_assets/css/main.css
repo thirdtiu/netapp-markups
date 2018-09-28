@@ -4469,3 +4469,21 @@ footer {
 #freeTrialModal .content-2 .note {
   font-size: .8125rem;
   color: #353535; }
+
+#youtubeModal .modal-dialog {
+  max-width: 800px;
+  margin: 30px auto; }
+
+#youtubeModal .modal-body {
+  position: relative;
+  padding: 0px; }
+
+#youtubeModal .close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1; }
