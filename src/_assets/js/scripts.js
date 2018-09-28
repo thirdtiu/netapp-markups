@@ -36,8 +36,8 @@ $(document).ready(function() {
   $('.multiple-items-carousel').slick({
     slidesToShow: 3,
     adaptiveHeight: true,
-    prevArrow: '<button type="button" class="slick-prev">&lt;</button>',
-    nextArrow: '<button type="button" class="slick-next">&gt;</button>',
+    prevArrow: '<a class="slick-prev"><i class="fas fa-chevron-left"></i></a>',
+    nextArrow: '<a class="slick-next"><i class="fas fa-chevron-right"></i></a>',
   })
 
   // end slick carousel

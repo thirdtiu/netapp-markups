@@ -615,11 +615,15 @@ a:hover {
 		position: absolute;
 		top: 50%;
 		margin-top: -20px;
+		font-size: 3rem;
 		&.slick-prev {
 			left: -20px;
 		}
 		&.slick-next {
 			right: -20px;
+		}
+		i {
+			color: $blue;
 		}
 	}
 	.card {
@@ -637,10 +641,12 @@ a:hover {
 				color: #969696;
 				line-height: 1;
 			}
-			.card-title {
-				font-size: 1.75rem;
-				font-weight: normal;
-			}
+		}
+		.card-title {
+			font-size: 1.3rem;
+			font-weight: normal;
+			height: 120px;
+			overflow: hidden;
 		}
 		.card-body {
 			padding: 35px 30px;

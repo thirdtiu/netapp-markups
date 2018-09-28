@@ -4326,11 +4326,14 @@ a:hover {
   .section-case-studies .slick-arrow {
     position: absolute;
     top: 50%;
-    margin-top: -20px; }
+    margin-top: -20px;
+    font-size: 3rem; }
     .section-case-studies .slick-arrow.slick-prev {
       left: -20px; }
     .section-case-studies .slick-arrow.slick-next {
       right: -20px; }
+    .section-case-studies .slick-arrow i {
+      color: #0067c5; }
   .section-case-studies .card {
     height: 100%;
     padding: 0;
@@ -4345,9 +4348,11 @@ a:hover {
         font-weight: normal;
         color: #969696;
         line-height: 1; }
-      .section-case-studies .card .card-header .card-title {
-        font-size: 1.75rem;
-        font-weight: normal; }
+    .section-case-studies .card .card-title {
+      font-size: 1.3rem;
+      font-weight: normal;
+      height: 120px;
+      overflow: hidden; }
     .section-case-studies .card .card-body {
       padding: 35px 30px; }
 
