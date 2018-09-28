@@ -4157,13 +4157,17 @@ a:hover {
   .section-feature h1 {
     font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
     font-size: 2.1875rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 90px; }
   .section-feature h2 {
     font-size: 1.5625rem; }
   .section-feature .feature {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px; }
+    .section-feature .feature img {
+      height: 90px;
+      margin-bottom: 60px; }
 
 .section-advantages {
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));

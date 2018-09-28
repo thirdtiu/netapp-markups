@@ -382,6 +382,7 @@ a:hover {
 		font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
 		font-size: 2.1875rem;
 		text-transform: uppercase;
+		margin-bottom: 90px;
 	}
 	h2 {
 		font-size: 1.5625rem;
@@ -390,6 +391,10 @@ a:hover {
 		text-align: center;
 		padding-left: 20px;
 		padding-right: 20px;
+		img {
+			height: 90px;
+			margin-bottom: 60px;
+		}
 	}
 }
 // end ontap cloud feature
