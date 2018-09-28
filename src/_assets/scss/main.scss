@@ -436,6 +436,15 @@ a:hover {
 	h2 {
 		font-size: 1.6rem;
 	}
+	.first-row {
+		margin-bottom: 70px;
+	}
+	.box {
+		img {
+			width: 56px;
+			margin-bottom: 26px;
+		}
+	}
 	.box:first-child {
 		text-align: left;
 		padding-right: 160px;
@@ -445,6 +454,7 @@ a:hover {
 		padding-left: 160px;
 		color: #fff;
 	}
+
 }
 // end advantages section
 

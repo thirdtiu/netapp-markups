@@ -4193,6 +4193,11 @@ a:hover {
     margin-bottom: 7rem; }
   .section-advantages h2 {
     font-size: 1.6rem; }
+  .section-advantages .first-row {
+    margin-bottom: 70px; }
+  .section-advantages .box img {
+    width: 56px;
+    margin-bottom: 26px; }
   .section-advantages .box:first-child {
     text-align: left;
     padding-right: 160px; }
