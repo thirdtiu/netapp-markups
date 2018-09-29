@@ -4394,6 +4394,9 @@ a:hover {
     .section-bottom .box img {
       width: 50px;
       margin-bottom: 15px; }
+    .section-bottom .box .btn {
+      padding-left: 2rem;
+      padding-right: 2rem; }
 
 footer {
   background-color: #444956;
@@ -4423,6 +4426,10 @@ footer {
       right: 0; }
     footer .footernav li:last-child:after {
       display: none; }
+    footer .footernav li a {
+      color: #eeeeee; }
+      footer .footernav li a:hover {
+        color: #fff; }
   footer .social li {
     padding-left: 15px; }
   footer .social a {

@@ -703,6 +703,10 @@ a:hover {
 			width: 50px;
 			margin-bottom: 15px;
 		}
+		.btn {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
 	}
 }
 // end section-bottom
@@ -742,6 +746,12 @@ footer {
 			}
 			&:last-child:after{
 				display: none;
+			}
+			a {
+				color: #eeeeee;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
