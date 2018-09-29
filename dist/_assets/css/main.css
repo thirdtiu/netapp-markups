@@ -4446,6 +4446,9 @@ footer {
 #whitepaperModal .modal-dialog {
   max-width: 90% !important; }
 
+#whitepaperModal .logo {
+  margin-bottom: 1.5rem; }
+
 #whitepaperModal .col-sm {
   padding-left: 0;
   padding-right: 0; }
@@ -4455,9 +4458,9 @@ footer {
 
 #whitepaperModal .content-1 {
   height: 100%;
-  background: #0067c5;
+  background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5;
   color: #fff;
-  padding-right: 200px; }
+  padding-right: 250px; }
   #whitepaperModal .content-1 h5 {
     text-transform: uppercase;
     font-size: 1rem;
