@@ -4443,6 +4443,12 @@ footer {
     footer .social a i {
       color: #444956; }
 
+#whitepaperModal .close-modal {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 999; }
+
 #whitepaperModal .modal-dialog {
   max-width: 90% !important; }
 
@@ -4495,6 +4501,12 @@ footer {
   border-radius: 100px;
   padding: 1rem 1.5rem;
   font-size: 1rem; }
+
+#freeTrialModal .close-modal {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 999; }
 
 #freeTrialModal .modal-dialog {
   max-width: 90% !important; }

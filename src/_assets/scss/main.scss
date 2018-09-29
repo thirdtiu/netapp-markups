@@ -777,6 +777,12 @@ footer {
 
 // whitepaper modal
 #whitepaperModal {
+	.close-modal {
+		position: absolute;
+		right: 25px;
+		top:25px;
+		z-index: 999;
+	}
 	.modal-dialog {
 		max-width: 90% !important;
 	}
@@ -847,6 +853,12 @@ footer {
 
 // free trial modal
 #freeTrialModal {
+	.close-modal {
+		position: absolute;
+		right: 25px;
+		top:25px;
+		z-index: 999;
+	}
 	.modal-dialog {
 		max-width: 90% !important;
 	}
