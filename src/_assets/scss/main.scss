@@ -850,6 +850,9 @@ footer {
 	.modal-dialog {
 		max-width: 90% !important;
 	}
+	.logo {
+		margin-bottom: 1.5rem;
+	}
 	.col-sm {
 		padding-left: 0;
 		padding-right: 0;
@@ -886,9 +889,9 @@ footer {
 		ul {
 			padding-left: 20px;
 		}
-		small {
+		.note {
 			font-size: 0.528125rem;
-			line-height: .75;
+			line-height: 1.5;
 		}
 	}
 	.content-2 {

@@ -4499,6 +4499,9 @@ footer {
 #freeTrialModal .modal-dialog {
   max-width: 90% !important; }
 
+#freeTrialModal .logo {
+  margin-bottom: 1.5rem; }
+
 #freeTrialModal .col-sm {
   padding-left: 0;
   padding-right: 0; }
@@ -4530,9 +4533,9 @@ footer {
     margin-bottom: 50px; }
   #freeTrialModal .content-1 ul {
     padding-left: 20px; }
-  #freeTrialModal .content-1 small {
+  #freeTrialModal .content-1 .note {
     font-size: 0.528125rem;
-    line-height: .75; }
+    line-height: 1.5; }
 
 #freeTrialModal .content-2 .note {
   font-size: .8125rem;
