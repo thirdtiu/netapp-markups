@@ -726,6 +726,41 @@ footer {
 	.d-flex {
 		justify-content: space-between;
 	}
+	.footernav {
+		li {
+			padding-right: 10px;
+			padding-left: 5px;
+			position: relative;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:after {
+				content: '\007C';
+				position: absolute;
+				right: 0;
+			}
+			&:last-child:after{
+				display: none;
+			}
+		}
+	}
+	.social {
+		li {
+			padding-left: 15px;
+		}
+		a {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background: #d9dadc;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 50%;
+			i {
+				color: #444956;
+			}
+		}
+	}
 }
 // end footer 
 

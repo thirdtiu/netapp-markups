@@ -4410,6 +4410,30 @@ footer {
   footer .d-flex {
     -ms-flex-pack: justify;
         justify-content: space-between; }
+  footer .footernav li {
+    padding-right: 10px;
+    padding-left: 5px;
+    position: relative; }
+    footer .footernav li:first-child {
+      padding-left: 0; }
+    footer .footernav li:after {
+      content: '\007C';
+      position: absolute;
+      right: 0; }
+    footer .footernav li:last-child:after {
+      display: none; }
+  footer .social li {
+    padding-left: 15px; }
+  footer .social a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #d9dadc;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%; }
+    footer .social a i {
+      color: #444956; }
 
 #whitepaperModal .modal-dialog {
   max-width: 90% !important; }
