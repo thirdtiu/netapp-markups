@@ -4381,6 +4381,8 @@ a:hover {
         text-transform: uppercase;
         color: #969696;
         font-weight: bold; }
+    .section-free-trial .box p {
+      margin-bottom: 2rem; }
 
 .section-bottom {
   padding: 65px 0; }
@@ -4388,6 +4390,9 @@ a:hover {
     padding: 0 120px; }
     .section-bottom .box h5 {
       font-size: 1.75rem; }
+    .section-bottom .box img {
+      width: 50px;
+      margin-bottom: 15px; }
 
 footer {
   background-color: #444956;

@@ -683,6 +683,9 @@ a:hover {
 				font-weight: bold;
 			}
 		}
+		p {
+			margin-bottom: 2rem;
+		}
 	}
 }
 // end section-free-trial
@@ -694,6 +697,10 @@ a:hover {
 		padding: 0 120px;
 		h5 {
 			font-size: 1.75rem;
+		}
+		img {
+			width: 50px;
+			margin-bottom: 15px;
 		}
 	}
 }
