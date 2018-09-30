@@ -1,7 +1,8 @@
 @import "bootstrap/functions";
 @import "bootstrap/variables";
+@import "bootstrap/mixins/breakpoints";
 @import "slick";
-@import "fa";//fontawesome
+@import "fa"; //fontawesome
 
 @font-face {
 	font-family: 'gotham_bookregular';
@@ -24,6 +25,7 @@
 $netapp-gray: #636363;
 $netapp-gray-hovered: #022057;
 $netapp-blue: #3d84ff;
+
 
 /**UTILITIES**/
 img{
@@ -69,7 +71,10 @@ a:hover {
 	}
 	a.assesment {
 		background: url(../template-images/ic-assess-header.svg) left no-repeat;
-		padding-right: 2.5rem;
+		
+		@include media-breakpoint-up(md) { 
+			padding-right: 2.5rem;
+		}
 	}
 	a.cloud {
 		background: url(../template-images/ic-cloud-story.svg) left no-repeat;
