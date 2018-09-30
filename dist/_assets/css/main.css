@@ -3944,9 +3944,7 @@ a:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold; }
   .top-menu-section .navbar {
-    background-color: #fff;
-    padding-top: 0;
-    padding-bottom: 0; }
+    background-color: #fff; }
   .top-menu-section .navbar-brand {
     padding-top: 0;
     padding-bottom: 0; }
@@ -3988,6 +3986,15 @@ a:hover {
       padding: .5rem 1rem;
       font-weight: bold;
       color: #636363; }
+  .top-menu-section .navbar-toggler {
+    border: none; }
+    .top-menu-section .navbar-toggler i {
+      color: #00235e; }
+  .top-menu-section .mobile-login {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: auto; }
 
 #carouselMasthead .carousel-item {
   height: 600px; }
@@ -4572,4 +4579,9 @@ footer {
 
 @media (min-width: 768px) {
   .top-menu-mini-section a.assesment {
-    padding-right: 2.5rem; } }
+    padding-right: 2.5rem; }
+  .top-menu-section .navbar {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .top-menu-section .mobile-login {
+    display: none; } }

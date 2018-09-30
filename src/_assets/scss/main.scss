@@ -98,8 +98,10 @@ a:hover {
 	font-weight: bold;
 	.navbar {
 		background-color: #fff;
-		padding-top: 0;
-		padding-bottom: 0;
+		@include media-breakpoint-up(md) {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 	}
 	.navbar-brand {
 		padding-top: 0;
@@ -159,6 +161,22 @@ a:hover {
 			padding: .5rem 1rem;
 			font-weight: bold;
 			color: #636363;
+		}
+	}
+
+	.navbar-toggler {
+		border: none;
+		i{
+			color: #00235e;
+		}
+	}
+	.mobile-login {
+		display: block;
+		width: 24px;
+		height: 24px;
+		margin-left: auto;
+		@include media-breakpoint-up(md) {
+			display: none;
 		}
 	}
 }
