@@ -59,7 +59,6 @@ $(document).ready(function() {
   $('.video-btn').click(function() {
       $videoSrc = $(this).data( "src" );
   });
-  console.log($videoSrc);
 
     
     
@@ -77,5 +76,24 @@ $(document).ready(function() {
       $("#video").attr('src',$videoSrc); 
   }) 
   // end youtube embed modal
+
+  
+  
+  // countries dropdown on modal
+  var dropdown = $('#countries-select-whitepaper, #countries-select-freetrial');
+    
+    dropdown.empty()
+
+    dropdown.append('<option selected="true" disabled>Choose Country</option>')
+    dropdown.prop('selectedIndex', 0);
+    
+    // var url = 'https://restcountries.eu/rest/v2/all'
+    var url = '_assets/js/countries.json'
+
+    $.getJSON(url, function(data){
+        $.each(data, function(key, entry){
+            dropdown.append($('<option></option>').attr('value', entry.name).text(entry.name));
+        })
+    })
 
 });

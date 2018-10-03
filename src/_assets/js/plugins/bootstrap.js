@@ -1,5 +1,5 @@
 /* requires:
-jquery-3.3.1.slim.min.js
+jquery-3.3.1.min.js
 popper.min.js
 */
 
