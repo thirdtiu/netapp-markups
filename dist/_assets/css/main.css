@@ -4242,7 +4242,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center; }
     .section-whitepaper .box .sep {
-      width: 6px;
+      width: 1px;
       height: 23px;
       content: ' ';
       background: #797b7d;
