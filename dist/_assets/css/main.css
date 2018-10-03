@@ -4099,7 +4099,7 @@ a:hover {
 
 .sticky-navbar-section {
   background-color: #fff;
-  border-bottom: 8px solid #afafaf; }
+  border-bottom: 1px solid #afafaf; }
   .sticky-navbar-section.affix {
     position: fixed;
     top: 0;
