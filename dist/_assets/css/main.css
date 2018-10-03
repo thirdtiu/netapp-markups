@@ -4309,6 +4309,10 @@ a:hover {
       font-weight: normal; }
   .section-whitepaper-solution .card .card-body {
     padding: 40px 50px; }
+  .section-whitepaper-solution .card i {
+    position: relative;
+    top: 2px;
+    margin-left: 10px; }
 
 .section-case-studies {
   padding-top: 90px;
@@ -4364,6 +4368,10 @@ a:hover {
       overflow: hidden; }
     .section-case-studies .card .card-body {
       padding: 35px 30px; }
+    .section-case-studies .card i {
+      position: relative;
+      top: 1px;
+      margin-left: 10px; }
 
 .section-free-trial {
   background: url(../template-images/bg-freetrial.jpg) center no-repeat;
@@ -4392,6 +4400,9 @@ a:hover {
         font-weight: bold; }
     .section-free-trial .box p {
       margin-bottom: 2rem; }
+    .section-free-trial .box i {
+      position: relative;
+      top: 1px; }
 
 .section-bottom {
   padding: 65px 0; }

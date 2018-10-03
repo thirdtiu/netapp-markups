@@ -606,6 +606,11 @@ a:hover {
 		.card-body {
 			padding: 40px 50px;
 		}
+		i {
+			position: relative;
+			top: 2px;
+			margin-left: 10px;
+		}
 	}
 }
 // end section-whitepaper-solution
@@ -676,6 +681,11 @@ a:hover {
 		.card-body {
 			padding: 35px 30px;
 		}
+		i {
+			position: relative;
+			top: 1px;
+			margin-left: 10px;
+		}
 	}
 }
 // start case studies carousel
@@ -710,6 +720,10 @@ a:hover {
 		}
 		p {
 			margin-bottom: 2rem;
+		}
+		i {
+			position: relative;
+			top: 1px;
 		}
 	}
 }
