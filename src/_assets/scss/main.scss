@@ -464,16 +464,17 @@ a:hover {
 		margin-bottom: 70px;
 	}
 	.box {
+		width:50%;
 		img {
 			width: 56px;
 			margin-bottom: 26px;
 		}
 	}
-	.box:first-child {
+	.box:first-child .content {
 		text-align: left;
 		padding-right: 160px;
 	}
-	.box:last-child {
+	.box:last-child .content {
 		text-align: right;
 		padding-left: 160px;
 		color: #fff;
