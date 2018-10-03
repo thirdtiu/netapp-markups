@@ -3893,6 +3893,9 @@
 img {
   max-width: 100%; }
 
+.full-width {
+  width: 100%; }
+
 body {
   background: #f6f6f6; }
 
@@ -4341,13 +4344,17 @@ a:hover {
     top: 50%;
     margin-top: -20px;
     font-size: 3rem; }
+    .section-case-studies .slick-arrow.slick-disabled {
+      display: none !important; }
     .section-case-studies .slick-arrow.slick-prev {
-      left: -20px; }
+      left: -40px; }
     .section-case-studies .slick-arrow.slick-next {
-      right: -20px; }
+      right: -40px; }
     .section-case-studies .slick-arrow i {
       color: #0067c5; }
   .section-case-studies .card {
+    border-radius: 0;
+    border: none;
     height: 100%;
     padding: 0;
     border-bottom: 10px solid #0067c5; }
@@ -4388,12 +4395,14 @@ a:hover {
     width: 50%;
     background-color: #fff; }
     .section-free-trial .box .head-section {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      width: 100%; }
       .section-free-trial .box .head-section h1 {
         font-size: 1.625rem;
         line-height: 1; }
       .section-free-trial .box .head-section h2 {
-        font-size: 1rem;
+        font-size: .95rem;
+        margin-bottom: .5rem;
         line-height: 1;
         text-transform: uppercase;
         color: #969696;

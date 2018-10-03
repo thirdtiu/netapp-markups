@@ -31,6 +31,9 @@ $netapp-blue: #3d84ff;
 img{
 	max-width: 100%;
 }
+.full-width {
+	width: 100%;
+}
 body{
 	background: #f6f6f6;
 }
@@ -646,17 +649,22 @@ a:hover {
 		top: 50%;
 		margin-top: -20px;
 		font-size: 3rem;
+		&.slick-disabled {
+			display: none !important;
+		}
 		&.slick-prev {
-			left: -20px;
+			left: -40px;
 		}
 		&.slick-next {
-			right: -20px;
+			right: -40px;
 		}
 		i {
 			color: $blue;
 		}
 	}
 	.card {
+		border-radius: 0;
+		border: none;
 		height: 100%;
 		padding: 0;
 		border-bottom: 10px solid $blue;
@@ -706,12 +714,14 @@ a:hover {
 		background-color: #fff;
 		.head-section {
 			margin-bottom: 2rem;
+			width: 100%;
 			h1 {
 				font-size: 1.625rem;
 				line-height: 1;
 			}
 			h2 {
-				font-size: 1rem;
+				font-size: .95rem;
+				margin-bottom: .5rem;
 				line-height: 1;
 				text-transform: uppercase;
 				color: #969696;
