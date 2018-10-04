@@ -114,7 +114,7 @@
 
     <!-- start masthead carousel -->
     <div>
-      <div id="carouselMasthead" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="10000">
+      <div id="carouselMasthead" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="false">
           <div class="carousel-inner">
             <!-- item 1 -->
             <div class="carousel-item carousel-item-1 active">
@@ -134,7 +134,7 @@
                     </h2>
                   </div>
                   <div class="image">
-                    <img src="_assets/template-images/banner-image-1.png" alt="Carousel Item Image 1" class="carousel-image carousel-image-1" style="position: relative; right: -24px; width:350px;" />
+                    <img src="_assets/template-images/banner-image-1.png" alt="Carousel Item Image 1" class="carousel-image carousel-image-1" />
                   </div>
                   <div class="content content-2">
                     <h2>
@@ -142,7 +142,13 @@
                       Infinite
                       Flexibility
                     </h2>
-                    <p>NetApp Cloud Volumes ONTAP on AWS enables you to move your data quickly – giving you the best of both worlds.</p>
+                    <div class="d-none d-md-block d-lg-block">
+                      <p>NetApp Cloud Volumes ONTAP on AWS enables you to move your data quickly – giving you the best of both worlds.</p>
+                      <p><a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#whitepaperModal">Download Whitepaper <i style="margin-left: 4px" class="far fa-arrow-alt-circle-right"></i></a></p>
+                    </div>
+                  </div>
+                  <div class="mobile-bottom-content d-none d-sm-block d-md-none">
+                    <p>NetApp Cloud Volumes ONTAP on AWS<br>enables you to move your data quickly –<br>giving you the best of both worlds.</p>
                     <p><a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#whitepaperModal">Download Whitepaper <i style="margin-left: 4px" class="far fa-arrow-alt-circle-right"></i></a></p>
                   </div>
                 </div>
@@ -175,7 +181,13 @@
                       Maximum
                       Productivity
                     </h2>
-                    <p>With NetApp Cloud Volumes ONTAP on AWS, you get the best of both worlds when you can instantaneously build thousands of dev/test environments in just minutes.</p>
+                    <div class="d-none d-md-block d-lg-block">
+                      <p>With NetApp Cloud Volumes ONTAP on AWS, you get the best of both worlds when you can instantaneously build thousands of dev/test environments in just minutes.</p>
+                    </div>
+                  </div>
+                  <div class="mobile-bottom-content d-none d-sm-block d-md-none">
+                    <p>NetApp Cloud Volumes ONTAP on AWS<br>enables you to move your data quickly –<br>giving you the best of both worlds.</p>
+                    <p><a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#whitepaperModal">Download Whitepaper <i style="margin-left: 4px" class="far fa-arrow-alt-circle-right"></i></a></p>
                   </div>
                 </div>
               </div>
@@ -250,11 +262,31 @@
     </div>
     <!-- end sticky navbar -->
 
+    <!-- mobile scrolling nav -->
+    <div class="mobile-scroll" style="display: none;">
+      <nav>
+        <a class="item" href="#about">About</a>
+        <div class="nav-item dropdown item" style="display: inline-block">
+          <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+          <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+            <a class="dropdown-item" href="#resource-library">Resource Library</a>
+            <a class="dropdown-item" href="#whitepaper">Whitepaper</a>
+            <a class="dropdown-item" href="#solution-brief">Solution Brief</a>
+            <a class="dropdown-item" href="#case-studies">Case Studies</a>
+            <a class="dropdown-item" href="#blogs">Blogs</a>
+          </div>
+        </div>
+        <a class="item" data-toggle="modal" data-target="#whitepaperModal" href="#freeTrialModal">Start Free Trial</a>
+        <a class="item" href="#" data-toggle="modal" data-target="#whitepaperModal">Download Whitepaper</a>
+      </nav>
+    </div>
+    <!-- end mobile scrolling nav -->
+
     <!-- start "what is netapp cloud volumes ontap" -->
     <section class="section-about" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-12 col-md-6">
             <div class="video">
                 <div class="embed-container">
                   <a class="video-btn" href="#" data-src="https://www.youtube.com/embed/kOa_llowQ1c" data-toggle="modal" data-target="#youtubeModal">
@@ -263,7 +295,7 @@
                 </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-md-6">
             <div class="content">
               <h1>What is NetApp Cloud Volumes ONTAP?</h1>
               <p>Meet NetApp Cloud Volumes ONTAP, the solution that simplifies and integrates data management across cloud and on-premises, giving you the best of both environments. With its single, centralized management console and storage efficiency technologies, get ready to seamlessly manage your data across its entire lifecycle – fuelling your digital transformation.</p>
@@ -279,7 +311,7 @@
       <div class="container">
         <h1 class="text-center">With ONTAP Cloud, You Can: </h1>
         <div class="row">
-          <div class="col-sm">
+          <div class="col-12 col-md-4">
             <div class="feature">
               <div class="text-center">
                 <img src="_assets/template-images/img-feature-1.png" alt="Cloud" />
@@ -288,7 +320,7 @@
               <p>As efficient data management is critical to your operation, this solution gives you the protection, visibility, and control you need to seamlessly meet your application demands.</p>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-md-4">
             <div class="feature">
               <div class="text-center">
                   <img src="_assets/template-images/img-feature-2.png" alt="Speed" />
@@ -297,7 +329,7 @@
               <p>Along with the storage resource efficiency on AWS, you are now able to instantaneously build, clone and tear down thousands of dev/test environments in minutes. </p>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-md-4">
             <div class="feature">
               <div class="text-center">
                   <img src="_assets/template-images/img-feature-3.png" alt="Save" />

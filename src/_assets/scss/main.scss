@@ -188,16 +188,32 @@ a:hover {
 // start masthead carousel
 #carouselMasthead {
 	.carousel-item {
-		height: 600px;
+		height: 1160px;
+		@include media-breakpoint-up(md) {
+			height: 600px;
+		}
 		.container {
 			height: 100%;
 			position: relative;
+			@include media-breakpoint-down(md){
+				max-width: 100% !important;
+				padding: 0;
+			}
+			.d-flex {
+				@include media-breakpoint-down(md){
+					flex-direction: column;
+					justify-content: space-between;
+				}
+			}
 		}
 		.content {
-			width: 33.33%;
+			width: 50%;
 			font-size: 0.9375rem;
 			h2 {
-				font-size: 2.1875rem;
+				font-size: 2.5rem;
+				@include media-breakpoint-up(sm) {
+					font-size: 2.1875rem;
+				}
 				font-family: 'gotham_boldregular', 'Open Sans', sans-serif;
 				text-transform: uppercase;
 				line-height: 1;
@@ -210,8 +226,58 @@ a:hover {
 			}
 		}
 		.content-1 {
+			color: #0067c5;
+			padding-top: 120px;
 			text-align: right;
+			@include media-breakpoint-up(md) {
+				align-self: flex-start;
+			}
+			@include media-breakpoint-down(md){
+				width: 50%;
+				text-align: right;
+				align-self: flex-start;
+				padding-right: 20px;
+			}
 		}
+		.content-2 {
+			color: #fff;
+			padding-bottom: 60px;
+			padding-left: 20px;
+			@include media-breakpoint-up(md) {
+				align-self: flex-end;
+			}
+			@include media-breakpoint-down(md){
+				text-align: left;
+				width: 50%;
+				align-self: flex-end;
+			}
+		}
+
+		.mobile-bottom-content {
+			
+			height: 310px;
+			align-self: flex-end;
+			text-align: center;
+			color: #fff;
+			width: 100%;
+			@include media-breakpoint-down(md){
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+		}
+
+		.carousel-control-prev, .carousel-control-next {
+			z-index: 888;
+
+			i {
+				@include media-breakpoint-down(md) {
+					margin-top: -300px;
+				}
+			}
+		}
+		
 		&.carousel-item-1 {
 			background: rgba(246,246,246,1);
 			background: -moz-linear-gradient(left, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 50%, rgba(0,102,197,1) 50%, rgba(0,102,197,1) 100%);
@@ -222,25 +288,28 @@ a:hover {
 			background: linear-gradient(to right, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 50%, rgba(0,102,197,1) 50%, rgba(0,102,197,1) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#0066c5', GradientType=1 );
 
+
 			.d-flex {
 				align-items: center;
 				justify-content: center;	
 				height: 100%;
 			}
-			.content-1 {
-				color: #0067c5;
-				align-self: flex-start;
-				padding-top: 120px;
-			}
 			.image {
-				width: 33%;	
+				width: 274px;
+				text-align: center;
+				position: relative;
+				right: -12px;
+			  @include media-breakpoint-up(md) {
+					
+				}
+				img {
+						width: 274px;
+				}
 			}
-			.content-2 {
-				color: #fff;
-				align-self: flex-end;
-				padding-bottom: 60px;
-				padding-left: 20px;
+			.mobile-bottom-content{
+				background: #0067c5;
 			}
+			
 			.carousel-control-prev {
 				i {
 					color: $blue;
@@ -256,6 +325,16 @@ a:hover {
 			background: -ms-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 50%, rgba(0,122,51,1) 50%, rgba(0,122,51,1) 100%);
 			background: linear-gradient(to bottom, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 50%, rgba(0,122,51,1) 50%, rgba(0,122,51,1) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 );
+			@include media-breakpoint-down(md) {
+				background: rgba(246,246,246,1);
+				background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 36%, rgba(0,122,51,1) 36%, rgba(0,122,51,1) 100%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,246,246,1)), color-stop(36%, rgba(246,246,246,1)), color-stop(36%, rgba(0,122,51,1)), color-stop(100%, rgba(0,122,51,1)));
+				background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 36%, rgba(0,122,51,1) 36%, rgba(0,122,51,1) 100%);
+				background: -o-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 36%, rgba(0,122,51,1) 36%, rgba(0,122,51,1) 100%);
+				background: -ms-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 36%, rgba(0,122,51,1) 36%, rgba(0,122,51,1) 100%);
+				background: linear-gradient(to bottom, rgba(246,246,246,1) 0%, rgba(246,246,246,1) 36%, rgba(0,122,51,1) 36%, rgba(0,122,51,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 );
+			}
 
 			.d-flex {
 				align-items: center;
@@ -279,7 +358,13 @@ a:hover {
 			.carousel-control-next {
 				i {
 					margin-bottom: -66px;
+					@include media-breakpoint-down(md) {
+						color: #007a33;
+					}
 				}
+			}
+			.mobile-bottom-content{
+				background: #007a33;
 			}
 		}
 		&.carousel-item-3 {
@@ -329,11 +414,13 @@ a:hover {
 	background-color: #fff;
 	border-bottom: 1px solid #afafaf;
 	&.affix {
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 1030;
+		@include media-breakpoint-up(md) {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1030;
+		}
 	}
 }
 .nav-slider {
@@ -388,16 +475,29 @@ a:hover {
 	background: #fff;
 	padding: 115px 0;
 	h1 {
-		font-size: 2.6rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin-bottom: 1.5rem;
+		@include media-breakpoint-up(md) {
+			font-size: 2.6rem;
+		}
 	}
 	.row {
 		align-items: center;
 	}
 	.video {
-		margin-right: 60px;
+		margin-bottom: 2rem;
+		@include media-breakpoint-up(md) { 
+			margin-right: 60px;
+			margin-bottom: 0;
+		}
 	}
 	.content {
-		margin-left: 60px;
+		text-align: center;
+		@include media-breakpoint-up(md) { 
+			text-align: left;
+			margin-left: 60px;
+		}
 	}
 }
 // end about section
@@ -407,20 +507,37 @@ a:hover {
 	padding: 125px 0;
 	h1 {
 		font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
-		font-size: 2.1875rem;
+		font-size: 1.8rem;
 		text-transform: uppercase;
-		margin-bottom: 90px;
+		margin-bottom: 2.5rem;
+		@include media-breakpoint-up(md) {
+			font-size: 2.1875rem;
+			margin-bottom: 90px;
+		}
 	}
 	h2 {
-		font-size: 1.5625rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 1.5rem;
+		@include media-breakpoint-up(md) {
+			font-size: 1.5625rem;
+		}
 	}
 	.feature {
 		text-align: center;
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-bottom: 2rem;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
 		img {
-			height: 90px;
-			margin-bottom: 60px;
+			height: 50px;
+			margin-bottom: 30px;
+			@include media-breakpoint-up(md) {
+				height: 90px;
+				margin-bottom: 60px;
+			}
 		}
 	}
 }
@@ -428,12 +545,15 @@ a:hover {
 
 // start advantages section
 .section-advantages {
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(50%, $blue), color-stop(100%, $blue));
-	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
-	background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
-	background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
-	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+	background: #fff;
+	@include media-breakpoint-up(md){
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(50%, $blue), color-stop(100%, $blue));
+		background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+		background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+		background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+		background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+	}
 	padding: 147px 0;
 
 	position: relative;
@@ -443,12 +563,15 @@ a:hover {
 		height: 9px;
 		top:-9px;
 		position: absolute;
-		background: -webkit-gradient(left top, right top, color-stop(0%, $blue), color-stop(50%, $blue), color-stop(50%, #fff), color-stop(100%, #fff));
-		background: -webkit-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
-		background: -o-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
-		background: -ms-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
-		background: linear-gradient(to right, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+		background: $blue;
+		@include media-breakpoint-up(md){
+			background: -webkit-gradient(left top, right top, color-stop(0%, $blue), color-stop(50%, $blue), color-stop(50%, #fff), color-stop(100%, #fff));
+			background: -webkit-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+			background: -o-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+			background: -ms-linear-gradient(left, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+			background: linear-gradient(to right, $blue 0%, $blue 50%, #fff 50%, #fff 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+		}
 	}
 
 	h1 {
@@ -461,13 +584,24 @@ a:hover {
 	}
 
 	h2 {
-		font-size: 1.6rem;
+		font-size: 1.2rem;
+		@include media-breakpoint-up(md){
+			font-size: 1.6rem;
+		}
 	}
 	.first-row {
 		margin-bottom: 70px;
 	}
+	.d-flex {
+		@include media-breakpoint-down(md){
+			flex-direction: column;
+		}
+	}
 	.box {
-		width:50%;
+		width: 100%;
+		@include media-breakpoint-up(md){
+			width:50%;
+		}
 		img {
 			width: 56px;
 			margin-bottom: 26px;
@@ -475,12 +609,16 @@ a:hover {
 	}
 	.box:first-child .content {
 		text-align: left;
-		padding-right: 160px;
+		@include media-breakpoint-up(md){
+			padding-right: 160px;
+		}
 	}
 	.box:last-child .content {
-		text-align: right;
-		padding-left: 160px;
-		color: #fff;
+		@include media-breakpoint-up(md){
+			text-align: right;
+			padding-left: 160px;
+			color: #fff;
+		}
 	}
 
 }
@@ -992,3 +1130,28 @@ footer {
 	}
 }
 // end youtube modal
+
+// mobile scroll
+/*
+[1]: Make a flex container so all our items align as necessary
+[2]: Prevent items from wrapping
+[3]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
+[4]: Make it smooth scrolling on iOS devices
+[5]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
+[6]: Hide the scroll bar in WebKit browsers
+*/
+.mobile-scroll {
+  display: flex; /* [1] */
+  flex-wrap: nowrap; /* [1] */
+  overflow-x: auto; /* [1] */
+  -webkit-overflow-scrolling: touch; /* [4] */
+	-ms-overflow-style: -ms-autohiding-scrollbar; /* [5] */ 
+
+	.item {
+		flex: 0 0 auto;
+	}
+}
+
+/* [6] */
+.mobile-scroll::-webkit-scrollbar {
+  display: none; }

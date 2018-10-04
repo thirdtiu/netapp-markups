@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Slider */
 .slick-slider {
   position: relative;
@@ -4000,15 +4001,15 @@ a:hover {
     margin-left: auto; }
 
 #carouselMasthead .carousel-item {
-  height: 600px; }
+  height: 1160px; }
   #carouselMasthead .carousel-item .container {
     height: 100%;
     position: relative; }
   #carouselMasthead .carousel-item .content {
-    width: 33.33%;
+    width: 50%;
     font-size: 0.9375rem; }
     #carouselMasthead .carousel-item .content h2 {
-      font-size: 2.1875rem;
+      font-size: 2.5rem;
       font-family: 'gotham_boldregular', 'Open Sans', sans-serif;
       text-transform: uppercase;
       line-height: 1; }
@@ -4017,7 +4018,22 @@ a:hover {
         display: block;
         font-family: 'gotham_bookregular', 'Open Sans', sans-serif; }
   #carouselMasthead .carousel-item .content-1 {
+    color: #0067c5;
+    padding-top: 120px;
     text-align: right; }
+  #carouselMasthead .carousel-item .content-2 {
+    color: #fff;
+    padding-bottom: 60px;
+    padding-left: 20px; }
+  #carouselMasthead .carousel-item .mobile-bottom-content {
+    height: 310px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    text-align: center;
+    color: #fff;
+    width: 100%; }
+  #carouselMasthead .carousel-item .carousel-control-prev, #carouselMasthead .carousel-item .carousel-control-next {
+    z-index: 888; }
   #carouselMasthead .carousel-item.carousel-item-1 {
     background: #f6f6f6;
     background: -webkit-gradient(left top, right top, color-stop(0%, #f6f6f6), color-stop(50%, #f6f6f6), color-stop(50%, #0066c5), color-stop(100%, #0066c5));
@@ -4029,19 +4045,15 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
       height: 100%; }
-    #carouselMasthead .carousel-item.carousel-item-1 .content-1 {
-      color: #0067c5;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-      padding-top: 120px; }
     #carouselMasthead .carousel-item.carousel-item-1 .image {
-      width: 33%; }
-    #carouselMasthead .carousel-item.carousel-item-1 .content-2 {
-      color: #fff;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-      padding-bottom: 60px;
-      padding-left: 20px; }
+      width: 274px;
+      text-align: center;
+      position: relative;
+      right: -12px; }
+      #carouselMasthead .carousel-item.carousel-item-1 .image img {
+        width: 274px; }
+    #carouselMasthead .carousel-item.carousel-item-1 .mobile-bottom-content {
+      background: #0067c5; }
     #carouselMasthead .carousel-item.carousel-item-1 .carousel-control-prev i {
       color: #0067c5; }
   #carouselMasthead .carousel-item.carousel-item-2 {
@@ -4070,6 +4082,8 @@ a:hover {
     #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
     #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i {
       margin-bottom: -66px; }
+    #carouselMasthead .carousel-item.carousel-item-2 .mobile-bottom-content {
+      background: #007a33; }
   #carouselMasthead .carousel-item.carousel-item-3 {
     background: -webkit-gradient(left top, right top, color-stop(0%, #f6f6f6), color-stop(50%, #f6f6f6), color-stop(50%, #7a4ba9), color-stop(100%, #7a4ba9));
     background: linear-gradient(to right, #f6f6f6 0%, #f6f6f6 50%, #7a4ba9 50%, #7a4ba9 100%);
@@ -4103,12 +4117,6 @@ a:hover {
 .sticky-navbar-section {
   background-color: #fff;
   border-bottom: 1px solid #afafaf; }
-  .sticky-navbar-section.affix {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030; }
 
 .nav-slider {
   position: relative;
@@ -4153,36 +4161,39 @@ a:hover {
   background: #fff;
   padding: 115px 0; }
   .section-about h1 {
-    font-size: 2.6rem; }
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
   .section-about .row {
     -ms-flex-align: center;
         align-items: center; }
   .section-about .video {
-    margin-right: 60px; }
+    margin-bottom: 2rem; }
   .section-about .content {
-    margin-left: 60px; }
+    text-align: center; }
 
 .section-feature {
   padding: 125px 0; }
   .section-feature h1 {
     font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
-    font-size: 2.1875rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    margin-bottom: 90px; }
+    margin-bottom: 2.5rem; }
   .section-feature h2 {
-    font-size: 1.5625rem; }
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
   .section-feature .feature {
     text-align: center;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    margin-bottom: 2rem; }
     .section-feature .feature img {
-      height: 90px;
-      margin-bottom: 60px; }
+      height: 50px;
+      margin-bottom: 30px; }
 
 .section-advantages {
-  background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
-  background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
+  background: #fff;
   padding: 147px 0;
   position: relative; }
   .section-advantages::after {
@@ -4191,9 +4202,7 @@ a:hover {
     height: 9px;
     top: -9px;
     position: absolute;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
-    background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
+    background: #0067c5; }
   .section-advantages h1 {
     color: #0067c5;
     font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
@@ -4202,21 +4211,16 @@ a:hover {
     font-size: 2.3rem;
     margin-bottom: 7rem; }
   .section-advantages h2 {
-    font-size: 1.6rem; }
+    font-size: 1.2rem; }
   .section-advantages .first-row {
     margin-bottom: 70px; }
   .section-advantages .box {
-    width: 50%; }
+    width: 100%; }
     .section-advantages .box img {
       width: 56px;
       margin-bottom: 26px; }
   .section-advantages .box:first-child .content {
-    text-align: left;
-    padding-right: 160px; }
-  .section-advantages .box:last-child .content {
-    text-align: right;
-    padding-left: 160px;
-    color: #fff; }
+    text-align: left; }
 
 .section-whitepaper {
   background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
@@ -4602,11 +4606,134 @@ footer {
   color: #fff;
   opacity: 1; }
 
-@media (min-width: 768px) {
-  .top-menu-mini-section a.assesment {
+/*
+[1]: Make a flex container so all our items align as necessary
+[2]: Prevent items from wrapping
+[3]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
+[4]: Make it smooth scrolling on iOS devices
+[5]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
+[6]: Hide the scroll bar in WebKit browsers
+*/
+.mobile-scroll {
+  display: -ms-flexbox;
+  display: flex;
+  /* [1] */
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /* [1] */
+  overflow-x: auto;
+  /* [1] */
+  -webkit-overflow-scrolling: touch;
+  /* [4] */
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* [5] */ }
+  .mobile-scroll .item {
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto; }
+
+/* [6] */
+.mobile-scroll::-webkit-scrollbar {
+  display: none; }
+@media (min-width: 768px){
+  .top-menu-mini-section a.assesment{
     padding-right: 2.5rem; }
-  .top-menu-section .navbar {
+  .top-menu-section .navbar{
     padding-top: 0;
     padding-bottom: 0; }
-  .top-menu-section .mobile-login {
-    display: none; } }
+  .top-menu-section .mobile-login{
+    display: none; }
+  #carouselMasthead .carousel-item{
+    height: 600px; }
+  #carouselMasthead .carousel-item .content-1{
+    -ms-flex-item-align: start;
+    align-self: flex-start; }
+  #carouselMasthead .carousel-item .content-2{
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  .sticky-navbar-section.affix{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; }
+  .section-about h1{
+    font-size: 2.6rem; }
+  .section-about .video{
+    margin-right: 60px;
+    margin-bottom: 0; }
+  .section-about .content{
+    text-align: left;
+    margin-left: 60px; }
+  .section-feature h1{
+    font-size: 2.1875rem;
+    margin-bottom: 90px; }
+  .section-feature h2{
+    font-size: 1.5625rem; }
+  .section-feature .feature{
+    margin-bottom: 0; }
+  .section-feature .feature img{
+    height: 90px;
+    margin-bottom: 60px; }
+  .section-advantages{
+    background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
+    background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
+  .section-advantages::after{
+    background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
+    background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
+  .section-advantages h2{
+    font-size: 1.6rem; }
+  .section-advantages .box{
+    width: 50%; }
+  .section-advantages .box:first-child .content{
+    padding-right: 160px; }
+  .section-advantages .box:last-child .content{
+    text-align: right;
+    padding-left: 160px;
+    color: #fff; } }
+@media (max-width: 991.98px){
+  #carouselMasthead .carousel-item .container{
+    max-width: 100% !important;
+    padding: 0; }
+  #carouselMasthead .carousel-item .container .d-flex{
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #carouselMasthead .carousel-item .content-1{
+    width: 50%;
+    text-align: right;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding-right: 20px; }
+  #carouselMasthead .carousel-item .content-2{
+    text-align: left;
+    width: 50%;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  #carouselMasthead .carousel-item .mobile-bottom-content{
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  #carouselMasthead .carousel-item .carousel-control-prev i, #carouselMasthead .carousel-item .carousel-control-next i{
+    margin-top: -300px; }
+  #carouselMasthead .carousel-item.carousel-item-2{
+    background: #f6f6f6;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(36%, #f6f6f6), color-stop(36%, #007a33), color-stop(100%, #007a33));
+    background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 36%, #007a33 36%, #007a33 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 ); }
+  #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
+        #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i{
+    color: #007a33; }
+  .section-advantages .d-flex{
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+@media (min-width: 576px){
+  #carouselMasthead .carousel-item .content h2{
+    font-size: 2.1875rem; } }
