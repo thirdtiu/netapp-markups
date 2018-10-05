@@ -548,9 +548,11 @@ a:hover {
 
 // start advantages section
 .section-advantages {
-	background: #fff;
-	padding: 4rem 0;
-	@include media-breakpoint-up(md){
+	@include media-breakpoint-down(sm) {
+		background: #fff;
+		padding: 4rem 0;
+	}
+	@include media-breakpoint-up(sm){
 		padding: 147px 0;
 		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(50%, $blue), color-stop(100%, $blue));
 		background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, $blue 50%, $blue 100%);
@@ -593,10 +595,7 @@ a:hover {
 	}
 
 	h2 {
-		font-size: 1.2rem;
-		@include media-breakpoint-up(md){
-			font-size: 1.6rem;
-		}
+		font-size: 1.6rem;
 	}
 	.first-row {
 		margin-bottom: 70px;
@@ -608,6 +607,9 @@ a:hover {
 	}
 	.box {
 		width: 100%;
+		@include media-breakpoint-down(md){
+			margin-bottom: 4rem;
+		}
 		@include media-breakpoint-up(md){
 			width:50%;
 		}
@@ -616,8 +618,15 @@ a:hover {
 				display: flex;
 				align-items: flex-start;
 			}
+
+			.image {
+				@include media-breakpoint-down(md){
+					flex: 0 0 30%;
+				}
+			}
 		}
 		img {
+			width: 56px;
 			@include media-breakpoint-up(md){
 				width: 56px;
 				margin-bottom: 26px;

@@ -4193,8 +4193,6 @@ a:hover {
       margin-bottom: 30px; }
 
 .section-advantages {
-  background: #fff;
-  padding: 4rem 0;
   position: relative; }
   .section-advantages::after {
     content: ' ';
@@ -4211,11 +4209,13 @@ a:hover {
     font-size: 1.6rem;
     margin-bottom: 4rem; }
   .section-advantages h2 {
-    font-size: 1.2rem; }
+    font-size: 1.6rem; }
   .section-advantages .first-row {
     margin-bottom: 70px; }
   .section-advantages .box {
     width: 100%; }
+    .section-advantages .box img {
+      width: 56px; }
   .section-advantages .box:first-child .content {
     text-align: left; }
 
@@ -4673,11 +4673,6 @@ footer {
   .section-feature .feature img{
     height: 90px;
     margin-bottom: 60px; }
-  .section-advantages{
-    padding: 147px 0;
-    background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
-    background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
   .section-advantages::after{
     background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
     background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
@@ -4685,8 +4680,6 @@ footer {
   .section-advantages h1{
     font-size: 2.3rem;
     margin-bottom: 7rem; }
-  .section-advantages h2{
-    font-size: 1.6rem; }
   .section-advantages .box{
     width: 50%; }
   .section-advantages .box img{
@@ -4740,11 +4733,25 @@ footer {
   .section-advantages .d-flex{
     -ms-flex-direction: column;
     flex-direction: column; }
+  .section-advantages .box{
+    margin-bottom: 4rem; }
   .section-advantages .box .content{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
-    align-items: flex-start; } }
+    align-items: flex-start; }
+  .section-advantages .box .content .image{
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%; } }
 @media (min-width: 576px){
   #carouselMasthead .carousel-item .content h2{
-    font-size: 2.1875rem; } }
+    font-size: 2.1875rem; }
+  .section-advantages{
+    padding: 147px 0;
+    background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
+    background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); } }
+@media (max-width: 767.98px){
+  .section-advantages{
+    background: #fff;
+    padding: 4rem 0; } }
