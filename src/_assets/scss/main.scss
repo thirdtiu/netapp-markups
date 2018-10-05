@@ -1251,6 +1251,11 @@ footer {
 	padding: 0 11px;
 	box-sizing: border-box;
 	background: #fff;
+	@include media-breakpoint-up(md){
+		visibility: hidden;
+		position: absolute;
+		z-index: -9;
+	}
 }
 
 .pn-ProductNav {
@@ -1378,3 +1383,4 @@ footer {
 	transform-origin: 0 0;
 	transition: transform .2s ease-in-out, background-color .2s ease-in-out;
 }
+// https://codepen.io/benfrain/pen/zZZLaP?editors=1000

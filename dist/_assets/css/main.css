@@ -4815,7 +4815,11 @@ footer {
     height: 120px;
     overflow: hidden; }
   .section-free-trial {
-    margin-top: 140px; } }
+    margin-top: 140px; }
+  .pn-ProductNav_Wrapper {
+    visibility: hidden;
+    position: absolute;
+    z-index: -9; } }
 
 @media (max-width: 991.98px) {
   #carouselMasthead .carousel-item .container {
