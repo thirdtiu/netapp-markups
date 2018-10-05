@@ -622,6 +622,11 @@ a:hover {
 			.image {
 				@include media-breakpoint-down(md){
 					flex: 0 0 30%;
+				}				
+				@include media-breakpoint-down(md){
+					img{
+						width: 50px;
+					}
 				}
 			}
 		}
@@ -651,13 +656,20 @@ a:hover {
 
 // start whitepaper section
 .section-whitepaper {
-	background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
-	background-size: cover;
-	padding: 90px 0;
+	background: url(../template-images/bg-whitepaper-mobile.png) bottom right no-repeat;
+	// background-size: cover;
+	padding: 40px 0 340px;
+	@include media-breakpoint-up(md){
+		background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
+		background-size: cover;
+		padding: 90px 0;
+	}
 	.box {
-		padding: 70px 50px;
-		width: 50%;
 		background-color: #fff;
+		padding: 70px 50px;
+		@include media-breakpoint-up(md){
+			width: 50%;
+		}
 		.head-section {
 			margin-bottom: 2rem;
 			h1 {

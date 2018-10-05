@@ -4220,13 +4220,11 @@ a:hover {
     text-align: left; }
 
 .section-whitepaper {
-  background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
-  background-size: cover;
-  padding: 90px 0; }
+  background: url(../template-images/bg-whitepaper-mobile.png) bottom right no-repeat;
+  padding: 40px 0 340px; }
   .section-whitepaper .box {
-    padding: 70px 50px;
-    width: 50%;
-    background-color: #fff; }
+    background-color: #fff;
+    padding: 70px 50px; }
     .section-whitepaper .box .head-section {
       margin-bottom: 2rem; }
       .section-whitepaper .box .head-section h1 {
@@ -4690,7 +4688,13 @@ footer {
   .section-advantages .box:last-child .content{
     text-align: right;
     padding-left: 160px;
-    color: #fff; } }
+    color: #fff; }
+  .section-whitepaper{
+    background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
+    background-size: cover;
+    padding: 90px 0; }
+  .section-whitepaper .box{
+    width: 50%; } }
 @media (max-width: 991.98px){
   #carouselMasthead .carousel-item .container{
     max-width: 100% !important;
@@ -4742,7 +4746,9 @@ footer {
     align-items: flex-start; }
   .section-advantages .box .content .image{
     -ms-flex: 0 0 30%;
-    flex: 0 0 30%; } }
+    flex: 0 0 30%; }
+  .section-advantages .box .content .image img{
+    width: 50px; } }
 @media (min-width: 576px){
   #carouselMasthead .carousel-item .content h2{
     font-size: 2.1875rem; }
