@@ -4173,7 +4173,7 @@ a:hover {
     text-align: center; }
 
 .section-feature {
-  padding: 125px 0; }
+  padding: 60px 0; }
   .section-feature h1 {
     font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
     font-size: 1.8rem;
@@ -4187,14 +4187,14 @@ a:hover {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
     .section-feature .feature img {
       height: 50px;
       margin-bottom: 30px; }
 
 .section-advantages {
   background: #fff;
-  padding: 147px 0;
+  padding: 4rem 0;
   position: relative; }
   .section-advantages::after {
     content: ' ';
@@ -4208,17 +4208,14 @@ a:hover {
     font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
     text-transform: uppercase;
     line-height: 1;
-    font-size: 2.3rem;
-    margin-bottom: 7rem; }
+    font-size: 1.6rem;
+    margin-bottom: 4rem; }
   .section-advantages h2 {
     font-size: 1.2rem; }
   .section-advantages .first-row {
     margin-bottom: 70px; }
   .section-advantages .box {
     width: 100%; }
-    .section-advantages .box img {
-      width: 56px;
-      margin-bottom: 26px; }
   .section-advantages .box:first-child .content {
     text-align: left; }
 
@@ -4664,6 +4661,8 @@ footer {
   .section-about .content{
     text-align: left;
     margin-left: 60px; }
+  .section-feature{
+    padding: 125px 0; }
   .section-feature h1{
     font-size: 2.1875rem;
     margin-bottom: 90px; }
@@ -4675,6 +4674,7 @@ footer {
     height: 90px;
     margin-bottom: 60px; }
   .section-advantages{
+    padding: 147px 0;
     background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
     background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
@@ -4682,10 +4682,16 @@ footer {
     background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
     background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
+  .section-advantages h1{
+    font-size: 2.3rem;
+    margin-bottom: 7rem; }
   .section-advantages h2{
     font-size: 1.6rem; }
   .section-advantages .box{
     width: 50%; }
+  .section-advantages .box img{
+    width: 56px;
+    margin-bottom: 26px; }
   .section-advantages .box:first-child .content{
     padding-right: 160px; }
   .section-advantages .box:last-child .content{
@@ -4733,7 +4739,12 @@ footer {
     color: #007a33; }
   .section-advantages .d-flex{
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .section-advantages .box .content{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
 @media (min-width: 576px){
   #carouselMasthead .carousel-item .content h2{
     font-size: 2.1875rem; } }
