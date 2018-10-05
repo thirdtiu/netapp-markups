@@ -4258,11 +4258,13 @@ a:hover {
     -ms-flex-align: center;
         align-items: center; }
   .section-webinar .video {
-    margin-right: 60px; }
+    margin-bottom: 2rem; }
   .section-webinar .content {
-    margin-left: 60px; }
+    text-align: center; }
   .section-webinar h1 {
-    font-size: 2.6875rem; }
+    font-size: 1.6rem; }
+  .section-webinar p {
+    margin-bottom: 1.5rem; }
 
 .section-resource {
   padding-top: 160px;
@@ -4694,7 +4696,15 @@ footer {
     background-size: cover;
     padding: 90px 0; }
   .section-whitepaper .box{
-    width: 50%; } }
+    width: 50%; }
+  .section-webinar .video{
+    margin-right: 60px;
+    margin-bottom: 0; }
+  .section-webinar .content{
+    text-align: left;
+    margin-left: 60px; }
+  .section-webinar h1{
+    font-size: 2.6875rem; } }
 @media (max-width: 991.98px){
   #carouselMasthead .carousel-item .container{
     max-width: 100% !important;

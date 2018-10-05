@@ -711,13 +711,27 @@ a:hover {
 		align-items: center;
 	}
 	.video {
-		margin-right: 60px;
+		margin-bottom: 2rem;
+		@include media-breakpoint-up(md){
+			margin-right: 60px;
+			margin-bottom: 0;
+		}
 	}
 	.content {
-		margin-left: 60px;
+		text-align: center;
+		@include media-breakpoint-up(md){
+			text-align: left;
+			margin-left: 60px;
+		}
 	}
 	h1 {
-		font-size: 2.6875rem;
+		font-size: 1.6rem;
+		@include media-breakpoint-up(md){
+			font-size: 2.6875rem;
+		}
+	}
+	p {
+		margin-bottom: 1.5rem;
 	}
 }
 // end webinar section
