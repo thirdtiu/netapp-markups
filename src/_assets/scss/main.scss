@@ -882,14 +882,21 @@ a:hover {
 		top: 50%;
 		margin-top: -20px;
 		font-size: 3rem;
+		z-index: 888;
 		&.slick-disabled {
 			display: none !important;
 		}
 		&.slick-prev {
-			left: -40px;
+			left: 0;
+			@include media-breakpoint-up(md){
+				left: -40px;
+			}
 		}
 		&.slick-next {
-			right: -40px;
+			right: 0;
+			@include media-breakpoint-up(md){
+				right: -40px;
+			}
 		}
 		i {
 			color: $blue;
@@ -900,7 +907,10 @@ a:hover {
 		border: none;
 		height: 100%;
 		padding: 0;
-		border-bottom: 10px solid $blue;
+		border-bottom: 5px solid $blue;
+		@include media-breakpoint-up(md){
+			border-bottom: 10px solid $blue;
+		}
 		.card-header {
 			background: transparent;
 			border-bottom: none;
@@ -916,8 +926,10 @@ a:hover {
 		.card-title {
 			font-size: 1.3rem;
 			font-weight: normal;
-			height: 120px;
-			overflow: hidden;
+			@include media-breakpoint-up(md){
+				height: 120px;
+				overflow: hidden;
+			}
 		}
 		.card-body {
 			padding: 35px 30px;

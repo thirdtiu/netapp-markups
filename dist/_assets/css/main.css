@@ -4340,13 +4340,14 @@ a:hover {
     position: absolute;
     top: 50%;
     margin-top: -20px;
-    font-size: 3rem; }
+    font-size: 3rem;
+    z-index: 888; }
     .section-case-studies .slick-arrow.slick-disabled {
       display: none !important; }
     .section-case-studies .slick-arrow.slick-prev {
-      left: -40px; }
+      left: 0; }
     .section-case-studies .slick-arrow.slick-next {
-      right: -40px; }
+      right: 0; }
     .section-case-studies .slick-arrow i {
       color: #0067c5; }
   .section-case-studies .card {
@@ -4354,7 +4355,7 @@ a:hover {
     border: none;
     height: 100%;
     padding: 0;
-    border-bottom: 10px solid #0067c5; }
+    border-bottom: 5px solid #0067c5; }
     .section-case-studies .card .card-header {
       background: transparent;
       border-bottom: none;
@@ -4367,9 +4368,7 @@ a:hover {
         line-height: 1; }
     .section-case-studies .card .card-title {
       font-size: 1.3rem;
-      font-weight: normal;
-      height: 120px;
-      overflow: hidden; }
+      font-weight: normal; }
     .section-case-studies .card .card-body {
       padding: 35px 30px; }
     .section-case-studies .card i {
@@ -4723,7 +4722,16 @@ footer {
   .section-whitepaper-solution .card .card-header .card-title{
     font-size: 1.75rem; }
   .section-whitepaper-solution .card .card-body{
-    padding: 40px 50px; } }
+    padding: 40px 50px; }
+  .section-case-studies .slick-arrow.slick-prev{
+    left: -40px; }
+  .section-case-studies .slick-arrow.slick-next{
+    right: -40px; }
+  .section-case-studies .card{
+    border-bottom: 10px solid #0067c5; }
+  .section-case-studies .card .card-title{
+    height: 120px;
+    overflow: hidden; } }
 @media (max-width: 991.98px){
   #carouselMasthead .carousel-item .container{
     max-width: 100% !important;

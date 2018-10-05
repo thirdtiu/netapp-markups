@@ -38,7 +38,16 @@ $(document).ready(function() {
     adaptiveHeight: true,
     prevArrow: '<a class="slick-prev"><i class="fas fa-chevron-left"></i></a>',
     nextArrow: '<a class="slick-next"><i class="fas fa-chevron-right"></i></a>',
-    infinite: false
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
   })
 
   // end slick carousel
