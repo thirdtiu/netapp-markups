@@ -263,22 +263,26 @@
     <!-- end sticky navbar -->
 
     <!-- mobile scrolling nav -->
-    <div class="mobile-scroll" style="display: none;">
-      <nav>
-        <a class="item" href="#about">About</a>
-        <div class="nav-item dropdown item" style="display: inline-block">
-          <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
-            <a class="dropdown-item" href="#resource-library">Resource Library</a>
-            <a class="dropdown-item" href="#whitepaper">Whitepaper</a>
-            <a class="dropdown-item" href="#solution-brief">Solution Brief</a>
-            <a class="dropdown-item" href="#case-studies">Case Studies</a>
-            <a class="dropdown-item" href="#blogs">Blogs</a>
-          </div>
+    <div class="pn-ProductNav_Wrapper">
+      <nav id="pnProductNav" class="pn-ProductNav">
+        <div id="pnProductNavContents" class="pn-ProductNav_Contents">
+          <a href="#about" aria-selected="true" class="pn-ProductNav_Link">About</a>
+          <a href="#resource-library" class="pn-ProductNav_Link">Resource Library</a>
+          <a href="#whitepaper" class="pn-ProductNav_Link">Whitepaper</a>
+          <a href="#solution-brief" class="pn-ProductNav_Link">Solution Brief</a>
+          <a href="#case-studies" class="pn-ProductNav_Link">Case Studies</a>
+          <a href="#blogs" class="pn-ProductNav_Link">Blogs</a>
+          <a href="#" data-toggle="modal" data-target="#freeTrialModal" class="pn-ProductNav_Link">Start Free Trial</a>
+          <a href="#" data-toggle="modal" data-target="#whitepaperModal" class="pn-ProductNav_Link">Download Whitepaper</a>
+          <span id="pnIndicator" class="pn-ProductNav_Indicator"></span>
         </div>
-        <a class="item" data-toggle="modal" data-target="#whitepaperModal" href="#freeTrialModal">Start Free Trial</a>
-        <a class="item" href="#" data-toggle="modal" data-target="#whitepaperModal">Download Whitepaper</a>
       </nav>
+      <button id="pnAdvancerLeft" class="pn-Advancer pn-Advancer_Left" type="button">
+        <i class="pn-Advancer_Icon fas fa-chevron-left"></i>
+      </button>
+      <button id="pnAdvancerRight" class="pn-Advancer pn-Advancer_Right" type="button">
+          <i class="pn-Advancer_Icon fas fa-chevron-right"></i>
+      </button>
     </div>
     <!-- end mobile scrolling nav -->
 

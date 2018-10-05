@@ -411,6 +411,10 @@ a:hover {
 
 // start sticky navbar
 .sticky-navbar-section {
+	display: none;
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
 	background-color: #fff;
 	border-bottom: 1px solid #afafaf;
 	&.affix {
@@ -947,8 +951,11 @@ a:hover {
 .section-free-trial {
 	background: url(../template-images/bg-freetrial.jpg) center no-repeat;
 	background-size: cover;
-	margin-top: 140px;
+	margin-top: 4rem;
 	padding: 90px 0;
+	@include media-breakpoint-up(md){
+		margin-top: 140px;	
+	}
 	.container {
 		display: flex;
 		justify-content: flex-end;
@@ -1239,26 +1246,135 @@ footer {
 // end youtube modal
 
 // mobile scroll
-/*
-[1]: Make a flex container so all our items align as necessary
-[2]: Prevent items from wrapping
-[3]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
-[4]: Make it smooth scrolling on iOS devices
-[5]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
-[6]: Hide the scroll bar in WebKit browsers
-*/
-.mobile-scroll {
-  display: flex; /* [1] */
-  flex-wrap: nowrap; /* [1] */
-  overflow-x: auto; /* [1] */
-  -webkit-overflow-scrolling: touch; /* [4] */
-	-ms-overflow-style: -ms-autohiding-scrollbar; /* [5] */ 
+.pn-ProductNav_Wrapper {
+	position: relative;
+	padding: 0 11px;
+	box-sizing: border-box;
+	background: #fff;
+}
 
-	.item {
-		flex: 0 0 auto;
+.pn-ProductNav {
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* If JS present, let's hide the default scrollbar */
+    .js & {
+        /* Make an auto-hiding scroller for the 3 people using a IE */
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        /* Remove the default scrollbar for WebKit implementations */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+	/* positioning context for advancers */
+	position: relative;
+	// Crush the whitespace here
+	font-size: 0;
+}
+
+.pn-ProductNav_Contents {
+	float: left;
+	transition: transform .2s ease-in-out;
+	position: relative;
+}
+
+.pn-ProductNav_Contents-no-transition {
+	transition: none;
+}
+
+.pn-ProductNav_Link {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	// Reset the font size
+	font-size: 1rem;
+	display: inline-flex;
+	align-items: center;
+	min-height: 64px;
+	// border: 1px solid transparent;
+	padding: 0 25px;
+	& + & {
+		border-left-color: #eee;
+	}
+	&[aria-selected="true"] {
+		color: #111;
 	}
 }
 
-/* [6] */
-.mobile-scroll::-webkit-scrollbar {
-  display: none; }
+.pn-Advancer {
+	/* Reset the button */
+	appearance: none;
+	background: transparent;
+	padding: 0;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	/* Now style it as needed */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	/* Set the buttons invisible by default */
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.pn-Advancer_Left {
+	left: 0;
+	[data-overflowing="both"] ~ &,
+	[data-overflowing="left"] ~ & {
+		opacity: 1;
+		padding-left: 20px;
+		padding-right: 20px;
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+	}
+}
+
+.pn-Advancer_Right {
+	right: 0;
+	[data-overflowing="both"]  ~ &,
+	[data-overflowing="right"] ~ & {
+		opacity: 1;
+		background: rgba(255,255,255,0);
+		background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.pn-Advancer_Icon {
+	font-size: 1.8rem;
+	color: #b7b7b7;
+}
+
+.pn-ProductNav_Indicator {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 100px;
+	background-color: transparent;
+	transform-origin: 0 0;
+	transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+}

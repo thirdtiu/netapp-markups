@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Slider */
 .slick-slider {
   position: relative;
@@ -4115,6 +4114,7 @@ a:hover {
   opacity: 1; }
 
 .sticky-navbar-section {
+  display: none;
   background-color: #fff;
   border-bottom: 1px solid #afafaf; }
 
@@ -4379,7 +4379,7 @@ a:hover {
 .section-free-trial {
   background: url(../template-images/bg-freetrial.jpg) center no-repeat;
   background-size: cover;
-  margin-top: 140px;
+  margin-top: 4rem;
   padding: 90px 0; }
   .section-free-trial .container {
     display: -ms-flexbox;
@@ -4598,161 +4598,246 @@ footer {
   color: #fff;
   opacity: 1; }
 
-/*
-[1]: Make a flex container so all our items align as necessary
-[2]: Prevent items from wrapping
-[3]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
-[4]: Make it smooth scrolling on iOS devices
-[5]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
-[6]: Hide the scroll bar in WebKit browsers
-*/
-.mobile-scroll {
-  display: -ms-flexbox;
-  display: flex;
-  /* [1] */
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  /* [1] */
-  overflow-x: auto;
-  /* [1] */
-  -webkit-overflow-scrolling: touch;
-  /* [4] */
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  /* [5] */ }
-  .mobile-scroll .item {
-    -ms-flex: 0 0 auto;
-        flex: 0 0 auto; }
+.pn-ProductNav_Wrapper {
+  position: relative;
+  padding: 0 11px;
+  box-sizing: border-box;
+  background: #fff; }
 
-/* [6] */
-.mobile-scroll::-webkit-scrollbar {
-  display: none; }
-@media (min-width: 768px){
-  .top-menu-mini-section a.assesment{
+.pn-ProductNav {
+  /* Make this scrollable when needed */
+  overflow-x: auto;
+  /* We don't want vertical scrolling */
+  overflow-y: hidden;
+  /* For WebKit implementations, provide inertia scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* We don't want internal inline elements to wrap */
+  white-space: nowrap;
+  /* If JS present, let's hide the default scrollbar */
+  /* positioning context for advancers */
+  position: relative;
+  font-size: 0; }
+  .js .pn-ProductNav {
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* Remove the default scrollbar for WebKit implementations */ }
+    .js .pn-ProductNav::-webkit-scrollbar {
+      display: none; }
+
+.pn-ProductNav_Contents {
+  float: left;
+  transition: transform .2s ease-in-out;
+  position: relative; }
+
+.pn-ProductNav_Contents-no-transition {
+  transition: none; }
+
+.pn-ProductNav_Link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 64px;
+  padding: 0 25px; }
+  .pn-ProductNav_Link + .pn-ProductNav_Link {
+    border-left-color: #eee; }
+  .pn-ProductNav_Link[aria-selected="true"] {
+    color: #111; }
+
+.pn-Advancer {
+  /* Reset the button */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  /* Now style it as needed */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* Set the buttons invisible by default */
+  opacity: 0;
+  transition: opacity .3s; }
+  .pn-Advancer:focus {
+    outline: 0; }
+  .pn-Advancer:hover {
+    cursor: pointer; }
+
+.pn-Advancer_Left {
+  left: 0; }
+  [data-overflowing="both"] ~ .pn-Advancer_Left,
+  [data-overflowing="left"] ~ .pn-Advancer_Left {
+    opacity: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+    background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 ); }
+
+.pn-Advancer_Right {
+  right: 0; }
+  [data-overflowing="both"] ~ .pn-Advancer_Right,
+  [data-overflowing="right"] ~ .pn-Advancer_Right {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.pn-Advancer_Icon {
+  font-size: 1.8rem;
+  color: #b7b7b7; }
+
+.pn-ProductNav_Indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100px;
+  background-color: transparent;
+  transform-origin: 0 0;
+  transition: transform .2s ease-in-out, background-color .2s ease-in-out; }
+
+@media (min-width: 768px) {
+  .top-menu-mini-section a.assesment {
     padding-right: 2.5rem; }
-  .top-menu-section .navbar{
+  .top-menu-section .navbar {
     padding-top: 0;
     padding-bottom: 0; }
-  .top-menu-section .mobile-login{
+  .top-menu-section .mobile-login {
     display: none; }
-  #carouselMasthead .carousel-item{
+  #carouselMasthead .carousel-item {
     height: 600px; }
-  #carouselMasthead .carousel-item .content-1{
+  #carouselMasthead .carousel-item .content-1 {
     -ms-flex-item-align: start;
     align-self: flex-start; }
-  #carouselMasthead .carousel-item .content-2{
+  #carouselMasthead .carousel-item .content-2 {
     -ms-flex-item-align: end;
     align-self: flex-end; }
-  .sticky-navbar-section.affix{
+  .sticky-navbar-section {
+    display: block; }
+  .sticky-navbar-section.affix {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030; }
-  .section-about h1{
+  .section-about h1 {
     font-size: 2.6rem; }
-  .section-about .video{
+  .section-about .video {
     margin-right: 60px;
     margin-bottom: 0; }
-  .section-about .content{
+  .section-about .content {
     text-align: left;
     margin-left: 60px; }
-  .section-feature{
+  .section-feature {
     padding: 125px 0; }
-  .section-feature h1{
+  .section-feature h1 {
     font-size: 2.1875rem;
     margin-bottom: 90px; }
-  .section-feature h2{
+  .section-feature h2 {
     font-size: 1.5625rem; }
-  .section-feature .feature{
+  .section-feature .feature {
     margin-bottom: 0; }
-  .section-feature .feature img{
+  .section-feature .feature img {
     height: 90px;
     margin-bottom: 60px; }
-  .section-advantages::after{
+  .section-advantages::after {
     background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
     background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
-  .section-advantages h1{
+  .section-advantages h1 {
     font-size: 2.3rem;
     margin-bottom: 7rem; }
-  .section-advantages .box{
+  .section-advantages .box {
     width: 50%; }
-  .section-advantages .box img{
+  .section-advantages .box img {
     width: 56px;
     margin-bottom: 26px; }
-  .section-advantages .box:first-child .content{
+  .section-advantages .box:first-child .content {
     padding-right: 160px; }
-  .section-advantages .box:last-child .content{
+  .section-advantages .box:last-child .content {
     text-align: right;
     padding-left: 160px;
     color: #fff; }
-  .section-whitepaper{
+  .section-whitepaper {
     background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
     background-size: cover;
     padding: 90px 0; }
-  .section-whitepaper .box{
+  .section-whitepaper .box {
     width: 50%; }
-  .section-webinar .video{
+  .section-webinar .video {
     margin-right: 60px;
     margin-bottom: 0; }
-  .section-webinar .content{
+  .section-webinar .content {
     text-align: left;
     margin-left: 60px; }
-  .section-webinar h1{
+  .section-webinar h1 {
     font-size: 2.6875rem; }
-  .section-resource .col-sm:first-child{
+  .section-resource .col-sm:first-child {
     padding-left: 0; }
-  .section-resource .content{
+  .section-resource .content {
     padding: 0 90px; }
-  .section-resource .content h2{
+  .section-resource .content h2 {
     margin: 0 0 .5rem 0;
     font-size: .95rem; }
-  .section-resource .content h1{
+  .section-resource .content h1 {
     font-size: 1.75rem; }
-  .section-whitepaper-solution .col-sm{
+  .section-whitepaper-solution .col-sm {
     margin-bottom: 0; }
-  .section-whitepaper-solution .col-sm:first-child{
+  .section-whitepaper-solution .col-sm:first-child {
     padding-left: 0; }
-  .section-whitepaper-solution .col-sm:last-child{
+  .section-whitepaper-solution .col-sm:last-child {
     padding-right: 0; }
-  .section-whitepaper-solution .card{
+  .section-whitepaper-solution .card {
     border-bottom: 10px solid #0067c5; }
-  .section-whitepaper-solution .card .card-header h6{
+  .section-whitepaper-solution .card .card-header h6 {
     font-size: .95rem; }
-  .section-whitepaper-solution .card .card-header .card-title{
+  .section-whitepaper-solution .card .card-header .card-title {
     font-size: 1.75rem; }
-  .section-whitepaper-solution .card .card-body{
+  .section-whitepaper-solution .card .card-body {
     padding: 40px 50px; }
-  .section-case-studies .slick-arrow.slick-prev{
+  .section-case-studies .slick-arrow.slick-prev {
     left: -40px; }
-  .section-case-studies .slick-arrow.slick-next{
+  .section-case-studies .slick-arrow.slick-next {
     right: -40px; }
-  .section-case-studies .card{
+  .section-case-studies .card {
     border-bottom: 10px solid #0067c5; }
-  .section-case-studies .card .card-title{
+  .section-case-studies .card .card-title {
     height: 120px;
-    overflow: hidden; } }
-@media (max-width: 991.98px){
-  #carouselMasthead .carousel-item .container{
+    overflow: hidden; }
+  .section-free-trial {
+    margin-top: 140px; } }
+
+@media (max-width: 991.98px) {
+  #carouselMasthead .carousel-item .container {
     max-width: 100% !important;
     padding: 0; }
-  #carouselMasthead .carousel-item .container .d-flex{
+  #carouselMasthead .carousel-item .container .d-flex {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  #carouselMasthead .carousel-item .content-1{
+  #carouselMasthead .carousel-item .content-1 {
     width: 50%;
     text-align: right;
     -ms-flex-item-align: start;
     align-self: flex-start;
     padding-right: 20px; }
-  #carouselMasthead .carousel-item .content-2{
+  #carouselMasthead .carousel-item .content-2 {
     text-align: left;
     width: 50%;
     -ms-flex-item-align: end;
     align-self: flex-end; }
-  #carouselMasthead .carousel-item .mobile-bottom-content{
+  #carouselMasthead .carousel-item .mobile-bottom-content {
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-align: center;
@@ -4761,47 +4846,49 @@ footer {
     justify-content: center;
     -ms-flex-direction: column;
     flex-direction: column; }
-  #carouselMasthead .carousel-item .carousel-control-prev i, #carouselMasthead .carousel-item .carousel-control-next i{
+  #carouselMasthead .carousel-item .carousel-control-prev i, #carouselMasthead .carousel-item .carousel-control-next i {
     margin-top: -300px; }
-  #carouselMasthead .carousel-item.carousel-item-2{
+  #carouselMasthead .carousel-item.carousel-item-2 {
     background: #f6f6f6;
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(36%, #f6f6f6), color-stop(36%, #007a33), color-stop(100%, #007a33));
     background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 36%, #007a33 36%, #007a33 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 ); }
   #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
-        #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i{
+        #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i {
     color: #007a33; }
-  .section-advantages .d-flex{
+  .section-advantages .d-flex {
     -ms-flex-direction: column;
     flex-direction: column; }
-  .section-advantages .box{
+  .section-advantages .box {
     margin-bottom: 4rem; }
-  .section-advantages .box .content{
+  .section-advantages .box .content {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start; }
-  .section-advantages .box .content .image{
+  .section-advantages .box .content .image {
     -ms-flex: 0 0 30%;
     flex: 0 0 30%; }
-  .section-advantages .box .content .image img{
+  .section-advantages .box .content .image img {
     width: 50px; }
-  .section-resource{
+  .section-resource {
     margin-left: 16px;
     margin-right: 16px;
     padding-bottom: 2rem; }
-  .section-resource .container{
+  .section-resource .container {
     padding: 0;
     border-bottom: 5px solid #0067c5; } }
-@media (min-width: 576px){
-  #carouselMasthead .carousel-item .content h2{
+
+@media (min-width: 576px) {
+  #carouselMasthead .carousel-item .content h2 {
     font-size: 2.1875rem; }
-  .section-advantages{
+  .section-advantages {
     padding: 147px 0;
     background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #0067c5), color-stop(100%, #0067c5));
     background: linear-gradient(to right, white 0%, white 50%, #0067c5 50%, #0067c5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); } }
-@media (max-width: 767.98px){
-  .section-advantages{
+
+@media (max-width: 767.98px) {
+  .section-advantages {
     background: #fff;
     padding: 4rem 0; } }
