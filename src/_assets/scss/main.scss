@@ -926,7 +926,7 @@ a:hover {
 	}
 	.slick-slide {
 		// padding: 18px;
-		@include media-breakpoint-up(md){
+		@include media-breakpoint-up(sm){
 			margin-right: 20px;
 			margin-left: 20px;
 		}
