@@ -4031,6 +4031,8 @@ a:hover {
     text-align: center;
     color: #fff;
     width: 100%; }
+    #carouselMasthead .carousel-item .mobile-bottom-content .mobile-content {
+      width: 300px; }
   #carouselMasthead .carousel-item .carousel-control-prev, #carouselMasthead .carousel-item .carousel-control-next {
     z-index: 888; }
   #carouselMasthead .carousel-item.carousel-item-1 {
@@ -4068,8 +4070,10 @@ a:hover {
       -ms-flex-item-align: start;
           align-self: flex-start;
       padding-top: 120px; }
-    #carouselMasthead .carousel-item.carousel-item-2 .image {
-      width: 33%; }
+    #carouselMasthead .carousel-item.carousel-item-2 .image img {
+      width: 200px;
+      position: relative;
+      bottom: 3px; }
     #carouselMasthead .carousel-item.carousel-item-2 .content-2 {
       color: #fff;
       -ms-flex-item-align: end;
@@ -4095,13 +4099,17 @@ a:hover {
       -ms-flex-item-align: start;
           align-self: flex-start;
       padding-top: 120px; }
-    #carouselMasthead .carousel-item.carousel-item-3 .image {
-      width: 33%; }
+    #carouselMasthead .carousel-item.carousel-item-3 .image img {
+      width: 200px;
+      position: relative;
+      right: -10px; }
     #carouselMasthead .carousel-item.carousel-item-3 .content-2 {
       color: #fff;
       -ms-flex-item-align: end;
           align-self: flex-end;
       padding-bottom: 60px; }
+    #carouselMasthead .carousel-item.carousel-item-3 .mobile-bottom-content {
+      background: #7a4ba9; }
     #carouselMasthead .carousel-item.carousel-item-3 .carousel-control-prev i {
       color: #7a4ba9; }
 
@@ -4716,8 +4724,6 @@ footer {
     padding-bottom: 0; }
   .top-menu-section .mobile-login {
     display: none; }
-  #carouselMasthead .carousel-item {
-    height: 600px; }
   #carouselMasthead .carousel-item .content-1 {
     -ms-flex-item-align: start;
     align-self: flex-start; }
@@ -4730,6 +4736,22 @@ footer {
     position: relative;
     right: -12px; }
   #carouselMasthead .carousel-item.carousel-item-1 .image img {
+    position: static;
+    width: 274px; }
+  #carouselMasthead .carousel-item.carousel-item-2 .image {
+    width: 274px;
+    text-align: center;
+    position: relative;
+    right: -12px; }
+  #carouselMasthead .carousel-item.carousel-item-2 .image img {
+    position: static;
+    width: 274px; }
+  #carouselMasthead .carousel-item.carousel-item-3 .image {
+    width: 274px;
+    text-align: center;
+    position: relative;
+    right: -12px; }
+  #carouselMasthead .carousel-item.carousel-item-3 .image img {
     position: static;
     width: 274px; }
   .sticky-navbar-section {
@@ -4869,6 +4891,10 @@ footer {
     position: absolute;
     z-index: -9; } }
 
+@media (min-width: 992px) {
+  #carouselMasthead .carousel-item {
+    height: 600px; } }
+
 @media (max-width: 991.98px) {
   #carouselMasthead .carousel-item .container {
     max-width: 100% !important;
@@ -4905,9 +4931,6 @@ footer {
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(36%, #f6f6f6), color-stop(36%, #007a33), color-stop(100%, #007a33));
     background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 36%, #007a33 36%, #007a33 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 ); }
-  #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
-        #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i {
-    color: #007a33; }
   .section-advantages .d-flex {
     -ms-flex-direction: column;
     flex-direction: column; }

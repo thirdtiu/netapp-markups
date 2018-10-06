@@ -189,7 +189,7 @@ a:hover {
 #carouselMasthead {
 	.carousel-item {
 		height: 1000px;
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			height: 600px;
 		}
 		.container {
@@ -260,6 +260,9 @@ a:hover {
 			text-align: center;
 			color: #fff;
 			width: 100%;
+			.mobile-content {
+				width: 300px;
+			}
 			@include media-breakpoint-down(md){
 				display: flex !important;
 				align-items: center;
@@ -350,9 +353,28 @@ a:hover {
 				color: #007a33;
 				align-self: flex-start;
 				padding-top: 120px;
+				h2 {
+					// height: 112px;
+				}
 			}
 			.image {
-				width: 33%;	
+			  @include media-breakpoint-up(md) {
+					width: 274px;
+					text-align: center;
+					position: relative;
+					right: -12px;	
+				}
+				img {
+					width: 200px;
+					position: relative;
+					bottom: 3px;
+					
+					@include media-breakpoint-up(md) {
+						position: static;
+						width: 274px;
+					}
+					
+				}
 			}
 			.content-2 {
 				color: #fff;
@@ -364,7 +386,7 @@ a:hover {
 				i {
 					margin-bottom: -66px;
 					@include media-breakpoint-down(md) {
-						color: #007a33;
+						// color: #007a33;
 					}
 				}
 			}
@@ -391,12 +413,29 @@ a:hover {
 				padding-top: 120px;
 			}
 			.image {
-				width: 33%;	
+			  @include media-breakpoint-up(md) {
+					width: 274px;
+					text-align: center;
+					position: relative;
+					right: -12px;	
+				}
+				img {
+					width: 200px;
+					position: relative;
+					right:-10px;
+					@include media-breakpoint-up(md) {
+						position: static;
+						width: 274px;
+					}
+				}
 			}
 			.content-2 {
 				color: #fff;
 				align-self: flex-end;
 				padding-bottom: 60px;
+			}
+			.mobile-bottom-content{
+				background: #7a4ba9;
 			}
 			.carousel-control-prev {
 				i {
