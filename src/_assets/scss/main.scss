@@ -188,7 +188,7 @@ a:hover {
 // start masthead carousel
 #carouselMasthead {
 	.carousel-item {
-		height: 1160px;
+		height: 1000px;
 		@include media-breakpoint-up(md) {
 			height: 600px;
 		}
@@ -210,7 +210,7 @@ a:hover {
 			width: 50%;
 			font-size: 0.9375rem;
 			h2 {
-				font-size: 2.5rem;
+				font-size: 1.2rem;
 				@include media-breakpoint-up(sm) {
 					font-size: 2.1875rem;
 				}
@@ -236,7 +236,7 @@ a:hover {
 				width: 50%;
 				text-align: right;
 				align-self: flex-start;
-				padding-right: 20px;
+				padding-right: 10px;
 			}
 		}
 		.content-2 {
@@ -295,15 +295,20 @@ a:hover {
 				height: 100%;
 			}
 			.image {
-				width: 274px;
-				text-align: center;
-				position: relative;
-				right: -12px;
 			  @include media-breakpoint-up(md) {
-					
+					width: 274px;
+					text-align: center;
+					position: relative;
+					right: -12px;	
 				}
 				img {
+					width: 200px;
+					position: relative;
+					right:-10px;
+					@include media-breakpoint-up(md) {
+						position: static;
 						width: 274px;
+					}
 				}
 			}
 			.mobile-bottom-content{

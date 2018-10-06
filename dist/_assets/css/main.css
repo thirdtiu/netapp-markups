@@ -4000,7 +4000,7 @@ a:hover {
     margin-left: auto; }
 
 #carouselMasthead .carousel-item {
-  height: 1160px; }
+  height: 1000px; }
   #carouselMasthead .carousel-item .container {
     height: 100%;
     position: relative; }
@@ -4008,7 +4008,7 @@ a:hover {
     width: 50%;
     font-size: 0.9375rem; }
     #carouselMasthead .carousel-item .content h2 {
-      font-size: 2.5rem;
+      font-size: 1.2rem;
       font-family: 'gotham_boldregular', 'Open Sans', sans-serif;
       text-transform: uppercase;
       line-height: 1; }
@@ -4044,13 +4044,10 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
       height: 100%; }
-    #carouselMasthead .carousel-item.carousel-item-1 .image {
-      width: 274px;
-      text-align: center;
+    #carouselMasthead .carousel-item.carousel-item-1 .image img {
+      width: 200px;
       position: relative;
-      right: -12px; }
-      #carouselMasthead .carousel-item.carousel-item-1 .image img {
-        width: 274px; }
+      right: -10px; }
     #carouselMasthead .carousel-item.carousel-item-1 .mobile-bottom-content {
       background: #0067c5; }
     #carouselMasthead .carousel-item.carousel-item-1 .carousel-control-prev i {
@@ -4727,6 +4724,14 @@ footer {
   #carouselMasthead .carousel-item .content-2 {
     -ms-flex-item-align: end;
     align-self: flex-end; }
+  #carouselMasthead .carousel-item.carousel-item-1 .image {
+    width: 274px;
+    text-align: center;
+    position: relative;
+    right: -12px; }
+  #carouselMasthead .carousel-item.carousel-item-1 .image img {
+    position: static;
+    width: 274px; }
   .sticky-navbar-section {
     display: block; }
   .sticky-navbar-section.affix {
@@ -4878,7 +4883,7 @@ footer {
     text-align: right;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    padding-right: 20px; }
+    padding-right: 10px; }
   #carouselMasthead .carousel-item .content-2 {
     text-align: left;
     width: 50%;
