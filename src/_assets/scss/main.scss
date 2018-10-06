@@ -477,7 +477,10 @@ a:hover {
 // start about section
 .section-about {
 	background: #fff;
-	padding: 115px 0;
+	padding: 4rem 0;
+	@include media-breakpoint-up(md) {
+		padding: 115px 0;
+	}
 	h1 {
 		font-size: 1.5rem;
 		font-weight: bold;
@@ -745,6 +748,7 @@ a:hover {
 	padding-top: 160px;
 	padding-bottom: 57px;
 	@include media-breakpoint-down(md){
+		padding-top: 4rem;
 		margin-left: 16px;
 		margin-right: 16px;
 		padding-bottom: 2rem;
@@ -814,6 +818,8 @@ a:hover {
 	.card {
 		height: 100%;
 		padding: 0;
+		border: none;
+		border-radius: 0;
 		border-bottom: 5px solid $blue;
 		@include media-breakpoint-up(md){
 			border-bottom: 10px solid $blue;
@@ -855,11 +861,18 @@ a:hover {
 }
 // end section-whitepaper-solution
 .section-case-studies {
-	padding-top:90px;
+	padding-top: 2rem;
 	display: flex;
-
+	@include media-breakpoint-up(md){
+		padding-top:90px;
+	}
 	h1 {
-		margin-bottom: 40px;
+		margin-bottom: 1.6rem;
+		font-size: 1.5rem;
+		@include media-breakpoint-up(md){
+			font-size: 2rem;
+			margin-bottom: 40px;
+		}
 	}
 	.multiple-items-carousel {
 		> div {
@@ -869,8 +882,10 @@ a:hover {
 	}
 	.slick-slide {
 		// padding: 18px;
-		margin-right: 20px;
-		margin-left: 20px;
+		@include media-breakpoint-up(md){
+			margin-right: 20px;
+			margin-left: 20px;
+		}
 	}
 	.slick-track{
 		display: flex;
@@ -926,6 +941,9 @@ a:hover {
 				color: #969696;
 				line-height: 1;
 			}
+		}
+		.card-img-top {
+			border-radius: 0;
 		}
 		.card-title {
 			font-size: 1.3rem;

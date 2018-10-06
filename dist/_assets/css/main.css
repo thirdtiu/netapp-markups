@@ -4159,7 +4159,7 @@ a:hover {
 
 .section-about {
   background: #fff;
-  padding: 115px 0; }
+  padding: 4rem 0; }
   .section-about h1 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -4293,6 +4293,8 @@ a:hover {
 .section-whitepaper-solution .card {
   height: 100%;
   padding: 0;
+  border: none;
+  border-radius: 0;
   border-bottom: 5px solid #0067c5; }
   .section-whitepaper-solution .card .card-header {
     background: transparent;
@@ -4315,16 +4317,14 @@ a:hover {
     margin-left: 10px; }
 
 .section-case-studies {
-  padding-top: 90px;
+  padding-top: 2rem;
   display: -ms-flexbox;
   display: flex; }
   .section-case-studies h1 {
-    margin-bottom: 40px; }
+    margin-bottom: 1.6rem;
+    font-size: 1.5rem; }
   .section-case-studies .multiple-items-carousel > div {
     height: 100%; }
-  .section-case-studies .slick-slide {
-    margin-right: 20px;
-    margin-left: 20px; }
   .section-case-studies .slick-track {
     display: -ms-flexbox;
     display: flex; }
@@ -4366,6 +4366,8 @@ a:hover {
         font-weight: normal;
         color: #969696;
         line-height: 1; }
+    .section-case-studies .card .card-img-top {
+      border-radius: 0; }
     .section-case-studies .card .card-title {
       font-size: 1.3rem;
       font-weight: normal; }
@@ -4730,6 +4732,8 @@ footer {
     right: 0;
     left: 0;
     z-index: 1030; }
+  .section-about {
+    padding: 115px 0; }
   .section-about h1 {
     font-size: 2.6rem; }
   .section-about .video {
@@ -4805,6 +4809,14 @@ footer {
     font-size: 1.75rem; }
   .section-whitepaper-solution .card .card-body {
     padding: 40px 50px; }
+  .section-case-studies {
+    padding-top: 90px; }
+  .section-case-studies h1 {
+    font-size: 2rem;
+    margin-bottom: 40px; }
+  .section-case-studies .slick-slide {
+    margin-right: 20px;
+    margin-left: 20px; }
   .section-case-studies .slick-arrow.slick-prev {
     left: -40px; }
   .section-case-studies .slick-arrow.slick-next {
@@ -4876,6 +4888,7 @@ footer {
   .section-advantages .box .content .image img {
     width: 50px; }
   .section-resource {
+    padding-top: 4rem;
     margin-left: 16px;
     margin-right: 16px;
     padding-bottom: 2rem; }

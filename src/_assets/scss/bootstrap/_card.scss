@@ -225,7 +225,7 @@
 
           .card-img-top,
           .card-header {
-            @include border-top-radius($card-border-radius);
+            @include border-top-radius(0);
           }
           .card-img-bottom,
           .card-footer {
