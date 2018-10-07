@@ -4422,7 +4422,8 @@ a:hover {
     margin-bottom: 4rem; }
     .section-bottom .box h5 {
       font-size: 1.25rem;
-      font-weight: bold; }
+      font-weight: bold;
+      height: auto; }
     .section-bottom .box img {
       width: 50px;
       margin-bottom: 15px; }
@@ -4500,9 +4501,9 @@ footer {
 
 #whitepaperModal .content-1 {
   height: 100%;
-  background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5;
   color: #fff;
-  padding-right: 250px; }
+  background-color: #0067c5;
+  padding: 100px 60px; }
   #whitepaperModal .content-1 h5 {
     text-transform: uppercase;
     font-size: 1rem;
@@ -4517,6 +4518,17 @@ footer {
 #whitepaperModal .content-2 .note {
   font-size: .8125rem;
   color: #353535; }
+
+#whitepaperModal .row {
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+
+#whitepaperModal .form-row {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  #whitepaperModal .form-row .col {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto; }
 
 .modal .modal-content > .row {
   margin-left: 0;
@@ -4860,6 +4872,8 @@ footer {
   .section-bottom .box {
     padding: 0 120px;
     margin-bottom: 0; }
+  .section-bottom .box h5 {
+    height: 47px; }
   footer .d-flex {
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -4878,11 +4892,25 @@ footer {
     content: '\007C';
     position: absolute;
     right: 0; }
+  footer .footernav .copyright {
+    margin-bottom: 0; }
   footer .social {
     text-align: left; }
   footer .social li {
     padding-left: 15px;
     padding-right: 0; }
+  #whitepaperModal .content-1 {
+    padding-right: 250px;
+    background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; }
+  #whitepaperModal .row {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #whitepaperModal .form-row {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #whitepaperModal .form-row .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0; }
   .pn-ProductNav_Wrapper {
     visibility: hidden;
     position: absolute;
