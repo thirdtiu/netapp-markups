@@ -4492,7 +4492,7 @@ footer {
 #whitepaperModal .logo {
   margin-bottom: 1.5rem; }
 
-#whitepaperModal .col-sm {
+#whitepaperModal .col-md {
   padding-left: 0;
   padding-right: 0; }
 
@@ -4503,7 +4503,7 @@ footer {
   height: 100%;
   color: #fff;
   background-color: #0067c5;
-  padding: 100px 60px; }
+  padding: 50px 30px; }
   #whitepaperModal .content-1 h5 {
     text-transform: uppercase;
     font-size: 1rem;
@@ -4563,19 +4563,19 @@ footer {
 #freeTrialModal .logo {
   margin-bottom: 1.5rem; }
 
-#freeTrialModal .col-sm {
+#freeTrialModal .col-md {
   padding-left: 0;
   padding-right: 0; }
 
 #freeTrialModal .content {
-  padding: 100px 60px; }
+  padding: 50px 30px; }
 
 #freeTrialModal .content-1 {
   height: 100%;
   background: url(../template-images/bg-freetrialmodal.jpg) center no-repeat #0067c5;
   background-size: cover;
   color: #fff;
-  padding-right: 200px; }
+  padding: 50px 30px; }
   #freeTrialModal .content-1 h5 {
     text-transform: uppercase;
     font-size: 1rem;
@@ -4601,6 +4601,17 @@ footer {
 #freeTrialModal .content-2 .note {
   font-size: .8125rem;
   color: #353535; }
+
+#freeTrialModal .row {
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+
+#freeTrialModal .form-row {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  #freeTrialModal .form-row .col {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto; }
 
 #youtubeModal .modal-dialog {
   max-width: 800px;
@@ -4911,6 +4922,17 @@ footer {
   #whitepaperModal .form-row .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0; }
+  #freeTrialModal .content-1 {
+    padding-right: 200px; }
+  #freeTrialModal .row {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #freeTrialModal .form-row {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #freeTrialModal .form-row .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0; }
   .pn-ProductNav_Wrapper {
     visibility: hidden;
     position: absolute;
@@ -4990,7 +5012,13 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 ); }
   .section-case-studies .slick-slide {
     margin-right: 20px;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  #whitepaperModal .content-1 {
+    padding: 100px 60px; }
+  #freeTrialModal .content {
+    padding: 100px 60px; }
+  #freeTrialModal .content-1 {
+    padding: 100px 60px; } }
 
 @media (max-width: 767.98px) {
   .section-advantages {
