@@ -3999,6 +3999,12 @@ a:hover {
     height: 24px;
     margin-left: auto; }
 
+#carouselMasthead .partner-badge {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 113px; }
+
 #carouselMasthead .carousel-item {
   height: 1000px; }
   #carouselMasthead .carousel-item .container {
@@ -4032,7 +4038,7 @@ a:hover {
     color: #fff;
     width: 100%; }
     #carouselMasthead .carousel-item .mobile-bottom-content .mobile-content {
-      width: 300px; }
+      width: 320px; }
   #carouselMasthead .carousel-item .carousel-control-prev, #carouselMasthead .carousel-item .carousel-control-next {
     z-index: 888; }
   #carouselMasthead .carousel-item.carousel-item-1 {
@@ -4115,7 +4121,7 @@ a:hover {
 
 #carouselMasthead .carousel-control-prev,
 #carouselMasthead .carousel-control-next {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   opacity: 1; }
 
 .sticky-navbar-section {
@@ -4789,6 +4795,9 @@ footer {
   #carouselMasthead .carousel-item.carousel-item-3 .image img {
     position: static;
     width: 274px; }
+  #carouselMasthead .carousel-control-prev,
+    #carouselMasthead .carousel-control-next {
+    font-size: 3.5rem; }
   .sticky-navbar-section {
     display: block; }
   .sticky-navbar-section.affix {
