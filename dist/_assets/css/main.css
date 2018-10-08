@@ -4161,6 +4161,8 @@ a:hover {
             margin-left: 5px;
             position: relative;
             top: 2px; }
+    .nav-slider .nav .dropdown-toggle::after {
+      margin-left: 1em; }
 
 .section-about {
   background: #fff;

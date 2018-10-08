@@ -514,6 +514,9 @@ a:hover {
 				}
 			}
 		}
+		.dropdown-toggle::after {
+			margin-left: 1em;
+		}
 	}
 }
 // end sticky navbar
