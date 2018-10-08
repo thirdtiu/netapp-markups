@@ -4653,7 +4653,8 @@ footer {
   position: relative;
   padding: 0 11px;
   box-sizing: border-box;
-  background: #fff; }
+  background: #fff;
+  border-bottom: 1px solid #afafaf; }
 
 .pn-ProductNav {
   /* Make this scrollable when needed */
@@ -4724,11 +4725,11 @@ footer {
   [data-overflowing="both"] ~ .pn-Advancer_Left,
   [data-overflowing="left"] ~ .pn-Advancer_Left {
     opacity: 1;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
     background: white;
-    background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(47%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, white 47%, rgba(255, 255, 255, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 ); }
 
 .pn-Advancer_Right {
@@ -4736,12 +4737,12 @@ footer {
   [data-overflowing="both"] ~ .pn-Advancer_Right,
   [data-overflowing="right"] ~ .pn-Advancer_Right {
     opacity: 1;
-    background: rgba(255, 255, 255, 0);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
-    padding-left: 20px;
-    padding-right: 20px; }
+    background: rgba(246, 245, 236, 0);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246, 245, 236, 0)), color-stop(47%, #fafaf5), color-stop(100%, white));
+    background: linear-gradient(to right, rgba(246, 245, 236, 0) 0%, #fafaf5 47%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f5ec', endColorstr='#ffffff', GradientType=1 );
+    padding-left: 30px;
+    padding-right: 10px; }
 
 .pn-Advancer_Icon {
   font-size: 1.8rem;
