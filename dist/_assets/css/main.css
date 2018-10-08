@@ -4297,6 +4297,9 @@ a:hover {
 .section-whitepaper-solution .col-sm {
   margin-bottom: 2rem; }
 
+.section-whitepaper-solution a, .section-whitepaper-solution a:hover {
+  color: #0b0b0b; }
+
 .section-whitepaper-solution .card {
   height: 100%;
   padding: 0;
@@ -4313,11 +4316,18 @@ a:hover {
       font-weight: normal;
       color: #969696;
       line-height: 1; }
-    .section-whitepaper-solution .card .card-header .card-title {
-      font-size: 1.3rem;
-      font-weight: normal; }
+    .section-whitepaper-solution .card .card-header a {
+      color: #0b0b0b; }
+      .section-whitepaper-solution .card .card-header a:hover {
+        color: #0b0b0b; }
+      .section-whitepaper-solution .card .card-header a .card-title {
+        color: #0b0b0b;
+        font-size: 1.3rem;
+        font-weight: normal; }
   .section-whitepaper-solution .card .card-body {
     padding: 2rem; }
+    .section-whitepaper-solution .card .card-body strong {
+      color: #0067c5 !important; }
   .section-whitepaper-solution .card i {
     position: relative;
     top: 2px;
@@ -4860,7 +4870,7 @@ footer {
     border-bottom: 10px solid #0067c5; }
   .section-whitepaper-solution .card .card-header h6 {
     font-size: .95rem; }
-  .section-whitepaper-solution .card .card-header .card-title {
+  .section-whitepaper-solution .card .card-header a .card-title {
     font-size: 1.75rem; }
   .section-whitepaper-solution .card .card-body {
     padding: 40px 50px; }
