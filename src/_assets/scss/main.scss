@@ -652,7 +652,7 @@ a:hover {
 		margin-bottom: 70px;
 	}
 	.d-flex {
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(sm){
 			flex-direction: column;
 		}
 	}
@@ -1063,7 +1063,6 @@ a:hover {
 		margin-bottom: 4rem;
 		@include media-breakpoint-up(md){
 			padding: 0 120px;
-			margin-bottom: 0;
 		}
 		h5 {
 			font-size: 1.25rem;
@@ -1211,9 +1210,6 @@ footer {
 		background-color: $blue;
 		padding: 50px 30px;
 		@include media-breakpoint-up(sm){
-			padding: 100px 60px;
-		}
-		@include media-breakpoint-up(md){
 			padding-right: 250px;
 			background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat $blue;
 		}
