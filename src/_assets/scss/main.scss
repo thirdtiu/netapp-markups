@@ -639,6 +639,12 @@ a:hover {
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#7a4ba9', GradientType=1 );
 		}
 	}
+	.container {
+		@include media-breakpoint-down(sm){
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
 
 	h1 {
 		color: $blue;

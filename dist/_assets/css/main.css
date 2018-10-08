@@ -5038,6 +5038,9 @@ footer {
   .section-advantages {
     background: #fff;
     padding: 4rem 0; }
+  .section-advantages .container {
+    padding-left: 3rem;
+    padding-right: 3rem; }
   .section-advantages .d-flex {
     -ms-flex-direction: column;
     flex-direction: column; } }
