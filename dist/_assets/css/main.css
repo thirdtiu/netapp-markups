@@ -4187,7 +4187,7 @@ a:hover {
     text-transform: uppercase;
     margin-bottom: 2.5rem; }
   .section-feature h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1.5rem; }
   .section-feature .feature {
@@ -4687,9 +4687,9 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   min-height: 64px;
-  padding: 0 25px; }
-  .pn-ProductNav_Link + .pn-ProductNav_Link {
-    border-left-color: #eee; }
+  padding: 0 20px;
+  letter-spacing: 0.1 .pn-ProductNav_Link.pn-ProductNav_Link;
+    letter-spacing-border-left-color: #eee; }
   .pn-ProductNav_Link[aria-selected="true"] {
     color: #111; }
 
@@ -4894,8 +4894,6 @@ footer {
     width: 50%; }
   .section-bottom .box {
     padding: 0 120px; }
-  .section-bottom .box h5 {
-    height: 47px; }
   footer .d-flex {
     -ms-flex-pack: justify;
     justify-content: space-between;
