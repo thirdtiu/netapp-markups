@@ -958,7 +958,8 @@ a:hover {
 		}
 	}
 	.slick-slide {
-		// padding: 18px;
+		margin-right: 10px;
+		margin-left: 10px;
 		@include media-breakpoint-up(sm){
 			margin-right: 20px;
 			margin-left: 20px;
@@ -971,6 +972,11 @@ a:hover {
 				height: auto;
 				align-items: center; //optional
 				justify-content: center; //optional
+		}
+	}
+	.slick-list {
+		@include media-breakpoint-down(sm){
+			padding: 0 10% 0 0;
 		}
 	}
 	.slick-arrow {
