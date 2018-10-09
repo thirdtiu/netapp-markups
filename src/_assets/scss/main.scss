@@ -819,6 +819,12 @@ a:hover {
 			border-bottom: 5px solid $blue;
 		}
 	}
+	.row {
+		@include media-breakpoint-down(sm){
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
 	.col-sm:first-child {
 		
 		@include media-breakpoint-up(md){

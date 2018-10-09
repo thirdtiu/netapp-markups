@@ -5044,4 +5044,7 @@ footer {
     padding-right: 3rem; }
   .section-advantages .d-flex {
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .section-resource .row {
+    margin-left: 0;
+    margin-right: 0; } }
