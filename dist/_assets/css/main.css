@@ -4055,7 +4055,7 @@ a:hover {
     #carouselMasthead .carousel-item.carousel-item-1 .image img {
       width: 200px;
       position: relative;
-      right: -10px; }
+      right: -9px; }
     #carouselMasthead .carousel-item.carousel-item-1 .mobile-bottom-content {
       background: #0067c5; }
     #carouselMasthead .carousel-item.carousel-item-1 .carousel-control-prev i {
@@ -4793,7 +4793,7 @@ footer {
     width: 274px;
     text-align: center;
     position: relative;
-    right: -12px; }
+    right: -11px; }
   #carouselMasthead .carousel-item.carousel-item-1 .image img {
     position: static;
     width: 274px; }

@@ -304,12 +304,12 @@ a:hover {
 					width: 274px;
 					text-align: center;
 					position: relative;
-					right: -12px;	
+					right: -11px;	
 				}
 				img {
 					width: 200px;
 					position: relative;
-					right:-10px;
+					right: -9px;
 					@include media-breakpoint-up(md) {
 						position: static;
 						width: 274px;
