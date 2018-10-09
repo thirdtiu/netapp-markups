@@ -4925,7 +4925,8 @@ footer {
     -ms-flex-direction: row;
     flex-direction: row; }
   footer .footernav {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    width: 50%; }
   footer .footernav li {
     line-height: 1.6;
     padding-right: 10px;
