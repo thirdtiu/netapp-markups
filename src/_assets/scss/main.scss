@@ -1468,8 +1468,9 @@ footer {
 	z-index: 0;
 	@include media-breakpoint-up(md){
 		visibility: hidden;
-		position: absolute;
+		// position: absolute;
 		z-index: -9;
+		margin-top:-70px;
 	}
 }
 

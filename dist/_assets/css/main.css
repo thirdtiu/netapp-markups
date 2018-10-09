@@ -4962,8 +4962,8 @@ footer {
     flex-basis: 0; }
   .pn-ProductNav_Wrapper {
     visibility: hidden;
-    position: absolute;
-    z-index: -9; } }
+    z-index: -9;
+    margin-top: -70px; } }
 
 @media (min-width: 992px) {
   #carouselMasthead .carousel-item {
