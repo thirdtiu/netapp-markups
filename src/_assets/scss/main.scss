@@ -1236,7 +1236,7 @@ footer {
 		color: #fff;
 		background-color: $blue;
 		padding: 50px 30px;
-		@include media-breakpoint-up(sm){
+		@include media-breakpoint-up(lg){
 			padding-right: 250px;
 			background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat $blue;
 		}
@@ -1261,7 +1261,7 @@ footer {
 		}
 	}
 	.row {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		@include media-breakpoint-up(md){
 			flex-direction: row;
 		}
@@ -1380,7 +1380,7 @@ footer {
 		}
 	}
 	.row {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		@include media-breakpoint-up(md){
 			flex-direction: row;
 		}
@@ -1434,6 +1434,7 @@ footer {
 	box-sizing: border-box;
 	background: #fff;
 	border-bottom: 1px solid #afafaf;
+	z-index: 0;
 	@include media-breakpoint-up(md){
 		visibility: hidden;
 		position: absolute;
