@@ -4070,7 +4070,8 @@ a:hover {
           align-items: center;
       -ms-flex-pack: center;
           justify-content: center;
-      height: 100%; }
+      height: 100%;
+      background: url(../template-images/banner-image-2-stretched.png) center 100px no-repeat; }
     #carouselMasthead .carousel-item.carousel-item-2 .content-1 {
       color: #007a33;
       -ms-flex-item-align: start;
@@ -4079,12 +4080,14 @@ a:hover {
     #carouselMasthead .carousel-item.carousel-item-2 .image img {
       width: 200px;
       position: relative;
-      bottom: 3px; }
+      bottom: 3px;
+      display: none; }
     #carouselMasthead .carousel-item.carousel-item-2 .content-2 {
       color: #fff;
       -ms-flex-item-align: end;
           align-self: flex-end;
-      padding-bottom: 60px; }
+      padding-bottom: 60px;
+      padding-top: 20px; }
     #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
     #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i {
       margin-bottom: -66px; }
@@ -4794,14 +4797,6 @@ footer {
   #carouselMasthead .carousel-item.carousel-item-1 .image img {
     position: static;
     width: 274px; }
-  #carouselMasthead .carousel-item.carousel-item-2 .image {
-    width: 274px;
-    text-align: center;
-    position: relative;
-    right: -12px; }
-  #carouselMasthead .carousel-item.carousel-item-2 .image img {
-    position: static;
-    width: 274px; }
   #carouselMasthead .carousel-item.carousel-item-3 .image {
     width: 274px;
     text-align: center;
@@ -4973,6 +4968,20 @@ footer {
 @media (min-width: 992px) {
   #carouselMasthead .carousel-item {
     height: 600px; }
+  #carouselMasthead .carousel-item.carousel-item-2 .d-flex {
+    background: none; }
+  #carouselMasthead .carousel-item.carousel-item-2 .image {
+    width: 274px;
+    text-align: center;
+    position: relative;
+    right: -12px;
+    bottom: -6px; }
+  #carouselMasthead .carousel-item.carousel-item-2 .image img {
+    position: static;
+    width: 274px;
+    display: block; }
+  #carouselMasthead .carousel-item.carousel-item-2 .content-2 {
+    padding-top: 0; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
     background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }

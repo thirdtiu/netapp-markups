@@ -350,6 +350,10 @@ a:hover {
 				align-items: center;
 				justify-content: center;	
 				height: 100%;
+				background: url(../template-images/banner-image-2-stretched.png) center 100px no-repeat;
+				@include media-breakpoint-up(lg){
+					background: none;
+				}
 			}
 			.content-1 {
 				color: #007a33;
@@ -360,20 +364,22 @@ a:hover {
 				}
 			}
 			.image {
-			  @include media-breakpoint-up(md) {
+			  @include media-breakpoint-up(lg) {
 					width: 274px;
 					text-align: center;
 					position: relative;
-					right: -12px;	
+					right: -12px;
+					bottom: -6px;	
 				}
 				img {
 					width: 200px;
 					position: relative;
 					bottom: 3px;
-					
-					@include media-breakpoint-up(md) {
+					display: none;
+					@include media-breakpoint-up(lg) {
 						position: static;
 						width: 274px;
+						display: block;
 					}
 					
 				}
@@ -382,6 +388,10 @@ a:hover {
 				color: #fff;
 				align-self: flex-end;
 				padding-bottom: 60px;
+				padding-top: 20px;
+				@include media-breakpoint-up(lg) {
+					padding-top: 0;
+				}
 			}
 			.carousel-control-prev,
 			.carousel-control-next {
