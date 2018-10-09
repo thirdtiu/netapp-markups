@@ -820,21 +820,24 @@ a:hover {
 		}
 	}
 	.row {
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(md){
 			margin-left: 0;
 			margin-right: 0;
 		}
 	}
 	.col-sm:first-child {
-		
 		@include media-breakpoint-up(md){
 			padding-left: 0;
 		}
 	}
+	img {
+		object-fit: cover;
+		height: 100%;
+	}
 	.content {
 		padding: 2rem;
 		@include media-breakpoint-up(md){
-			padding: 0 90px;
+			padding: 2rem 90px;
 		}
 		h2 {
 			margin: 0;
@@ -1120,7 +1123,7 @@ a:hover {
 		margin-bottom: 4rem;
 		padding: 0 4rem;
 		@include media-breakpoint-up(md){
-			padding: 0 120px;
+			padding: 0 4rem;
 		}
 		h5 {
 			font-size: 1.25rem;

@@ -4286,6 +4286,10 @@ a:hover {
   .section-resource .container {
     background: #fff;
     border-bottom: 10px solid #0067c5; }
+  .section-resource img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%; }
   .section-resource .content {
     padding: 2rem; }
     .section-resource .content h2 {
@@ -4874,7 +4878,7 @@ footer {
   .section-resource .col-sm:first-child {
     padding-left: 0; }
   .section-resource .content {
-    padding: 0 90px; }
+    padding: 2rem 90px; }
   .section-resource .content h2 {
     margin: 0 0 .5rem 0;
     font-size: .95rem; }
@@ -4914,7 +4918,7 @@ footer {
     padding: 70px 50px;
     width: 50%; }
   .section-bottom .box {
-    padding: 0 120px; }
+    padding: 0 4rem; }
   footer .d-flex {
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -5027,7 +5031,10 @@ footer {
     padding-bottom: 2rem; }
   .section-resource .container {
     padding: 0;
-    border-bottom: 5px solid #0067c5; } }
+    border-bottom: 5px solid #0067c5; }
+  .section-resource .row {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media (min-width: 576px) {
   #carouselMasthead .carousel-item .content h2 {
@@ -5055,9 +5062,6 @@ footer {
   .section-advantages .d-flex {
     -ms-flex-direction: column;
     flex-direction: column; }
-  .section-resource .row {
-    margin-left: 0;
-    margin-right: 0; }
   .section-case-studies .slick-list {
     padding: 0 10% 0 0; }
   .section-free-trial .box .head-section {
