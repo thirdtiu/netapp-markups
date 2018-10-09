@@ -4445,7 +4445,8 @@ a:hover {
 .section-bottom {
   padding: 65px 0; }
   .section-bottom .box {
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    padding: 0 4rem; }
     .section-bottom .box h5 {
       font-size: 1.25rem;
       font-weight: bold;
