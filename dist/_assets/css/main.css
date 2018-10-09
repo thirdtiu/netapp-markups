@@ -4415,7 +4415,7 @@ a:hover {
     -ms-flex-pack: end;
         justify-content: flex-end; }
   .section-free-trial .box {
-    padding: 70px 50px;
+    padding: 2rem;
     width: 100%;
     background-color: #fff; }
     .section-free-trial .box .head-section {
@@ -4433,6 +4433,11 @@ a:hover {
         font-weight: bold; }
     .section-free-trial .box p {
       margin-bottom: 2rem; }
+    .section-free-trial .box p.link {
+      margin-bottom: 0; }
+      .section-free-trial .box p.link img {
+        position: relative;
+        top: -4px; }
     .section-free-trial .box i {
       position: relative;
       top: 1px; }
@@ -4905,6 +4910,7 @@ footer {
   .section-free-trial {
     margin-top: 140px; }
   .section-free-trial .box {
+    padding: 70px 50px;
     width: 50%; }
   .section-bottom .box {
     padding: 0 120px; }
@@ -5052,4 +5058,13 @@ footer {
     margin-left: 0;
     margin-right: 0; }
   .section-case-studies .slick-list {
-    padding: 0 10% 0 0; } }
+    padding: 0 10% 0 0; }
+  .section-free-trial .box .head-section {
+    margin-bottom: 1rem; } }
+
+@media (max-width: 360px) {
+  .section-free-trial .box p.link {
+    font-size: .7rem; }
+  .section-free-trial .box p.link img {
+    top: -2px;
+    width: 20px; } }
