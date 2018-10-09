@@ -4109,9 +4109,9 @@ a:hover {
           align-self: flex-start;
       padding-top: 120px; }
     #carouselMasthead .carousel-item.carousel-item-3 .image img {
-      width: 200px;
+      width: 175px;
       position: relative;
-      right: -10px; }
+      right: -5px; }
     #carouselMasthead .carousel-item.carousel-item-3 .content-2 {
       color: #fff;
       -ms-flex-item-align: end;
@@ -4797,14 +4797,6 @@ footer {
   #carouselMasthead .carousel-item.carousel-item-1 .image img {
     position: static;
     width: 274px; }
-  #carouselMasthead .carousel-item.carousel-item-3 .image {
-    width: 274px;
-    text-align: center;
-    position: relative;
-    right: -12px; }
-  #carouselMasthead .carousel-item.carousel-item-3 .image img {
-    position: static;
-    width: 274px; }
   #carouselMasthead .carousel-control-prev,
     #carouselMasthead .carousel-control-next {
     font-size: 3.5rem; }
@@ -4982,6 +4974,14 @@ footer {
     display: block; }
   #carouselMasthead .carousel-item.carousel-item-2 .content-2 {
     padding-top: 0; }
+  #carouselMasthead .carousel-item.carousel-item-3 .image {
+    width: 274px;
+    text-align: center;
+    position: relative;
+    right: -8px; }
+  #carouselMasthead .carousel-item.carousel-item-3 .image img {
+    position: static;
+    width: 274px; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
     background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }

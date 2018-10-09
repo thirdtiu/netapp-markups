@@ -425,17 +425,17 @@ a:hover {
 				padding-top: 120px;
 			}
 			.image {
-			  @include media-breakpoint-up(md) {
+			  @include media-breakpoint-up(lg) {
 					width: 274px;
 					text-align: center;
 					position: relative;
-					right: -12px;	
+					right: -8px;	
 				}
 				img {
-					width: 200px;
+					width: 175px;
 					position: relative;
-					right:-10px;
-					@include media-breakpoint-up(md) {
+					right: -5px;
+					@include media-breakpoint-up(lg) {
 						position: static;
 						width: 274px;
 					}
