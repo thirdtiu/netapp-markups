@@ -4289,10 +4289,12 @@ a:hover {
   .section-resource .container {
     background: #fff;
     border-bottom: 10px solid #0067c5; }
+  .section-resource .col-sm:first-child {
+    padding-left: 0;
+    padding-right: 0; }
   .section-resource img {
     -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%; }
+       object-fit: cover; }
   .section-resource .content {
     padding: 2rem; }
     .section-resource .content h2 {

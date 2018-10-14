@@ -836,13 +836,16 @@ a:hover {
 		}
 	}
 	.col-sm:first-child {
+		padding-left: 0;
+		padding-right: 0;
 		@include media-breakpoint-up(md){
 			padding-left: 0;
 		}
 	}
 	img {
 		object-fit: cover;
-		height: 100%;
+		// height: 100%;
+		// width: 100%;
 	}
 	.content {
 		padding: 2rem;
