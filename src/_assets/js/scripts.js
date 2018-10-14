@@ -101,7 +101,7 @@ $(document).ready(function() {
     
     dropdown.empty()
 
-    dropdown.append('<option selected="true" disabled>Choose Country</option>')
+    dropdown.append('<option selected="true" disabled>- Please Select Country/Region -</option>')
     dropdown.prop('selectedIndex', 0);
     
     // var url = 'https://restcountries.eu/rest/v2/all'

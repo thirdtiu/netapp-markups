@@ -1,6 +1,5 @@
 [ 
-  {"name": "Afghanistan", "code": "AF"}, 
-  {"name": "land Islands", "code": "AX"}, 
+  {"name": "Afghanistan", "code": "AF"},
   {"name": "Albania", "code": "AL"}, 
   {"name": "Algeria", "code": "DZ"}, 
   {"name": "American Samoa", "code": "AS"}, 
@@ -347,7 +346,7 @@ $(document).ready(function() {
     
     dropdown.empty()
 
-    dropdown.append('<option selected="true" disabled>Choose Country</option>')
+    dropdown.append('<option selected="true" disabled>- Please Select Country/Region -</option>')
     dropdown.prop('selectedIndex', 0);
     
     // var url = 'https://restcountries.eu/rest/v2/all'
