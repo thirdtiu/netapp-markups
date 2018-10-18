@@ -558,14 +558,14 @@ a:hover {
 	}
 	.video {
 		margin-bottom: 2rem;
-		@include media-breakpoint-up(md) { 
+		@include media-breakpoint-up(lg) { 
 			margin-right: 60px;
 			margin-bottom: 0;
 		}
 	}
 	.content {
 		text-align: center;
-		@include media-breakpoint-up(md) { 
+		@include media-breakpoint-up(lg) { 
 			text-align: left;
 			margin-left: 60px;
 		}

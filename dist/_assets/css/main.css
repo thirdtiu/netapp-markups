@@ -4817,12 +4817,6 @@ footer {
     padding: 115px 0; }
   .section-about h1 {
     font-size: 2.6rem; }
-  .section-about .video {
-    margin-right: 60px;
-    margin-bottom: 0; }
-  .section-about .content {
-    text-align: left;
-    margin-left: 60px; }
   .section-feature {
     padding: 125px 0; }
   .section-feature h1 {
@@ -4989,6 +4983,12 @@ footer {
   #carouselMasthead .carousel-item.carousel-item-3 .image img {
     position: static;
     width: 274px; }
+  .section-about .video {
+    margin-right: 60px;
+    margin-bottom: 0; }
+  .section-about .content {
+    text-align: left;
+    margin-left: 60px; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
     background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }
