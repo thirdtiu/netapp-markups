@@ -4003,7 +4003,7 @@ a:hover {
   position: absolute;
   top: 0;
   right: 20px;
-  width: 113px; }
+  width: 150px; }
 
 #carouselMasthead .carousel-item {
   height: 1000px; }
@@ -4197,7 +4197,6 @@ a:hover {
     margin-bottom: 2.5rem; }
   .section-feature h2 {
     font-size: 1.4rem;
-    font-weight: bold;
     margin-bottom: 1.5rem; }
   .section-feature .feature {
     text-align: center;
@@ -4830,8 +4829,8 @@ footer {
   .section-feature .feature {
     margin-bottom: 0; }
   .section-feature .feature img {
-    height: 90px;
-    margin-bottom: 60px; }
+    height: 70px;
+    margin-bottom: 30px; }
   .section-advantages::after {
     background: -webkit-gradient(left top, right top, color-stop(0%, #0067c5), color-stop(50%, #0067c5), color-stop(50%, #fff), color-stop(100%, #fff));
     background: linear-gradient(to right, #0067c5 0%, #0067c5 50%, #fff 50%, #fff 100%);
