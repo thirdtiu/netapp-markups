@@ -4458,7 +4458,10 @@ a:hover {
     .section-bottom .box h5 {
       font-size: 1.25rem;
       font-weight: bold;
-      height: auto; }
+      height: auto;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto; }
     .section-bottom .box img {
       width: 50px;
       margin-bottom: 15px; }
@@ -4907,6 +4910,8 @@ footer {
     width: 50%; }
   .section-bottom .box {
     padding: 0 4rem; }
+  .section-bottom .box h5 {
+    width: 100%; }
   footer .d-flex {
     -ms-flex-pack: justify;
     justify-content: space-between;

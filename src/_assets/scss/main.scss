@@ -1143,8 +1143,11 @@ a:hover {
 			font-size: 1.25rem;
 			font-weight: bold;
 			height: auto;
+			width: 200px;
+			margin-left: auto;
+			margin-right: auto;
 			@include media-breakpoint-up(md){
-				// height: 47px;
+				width: 100%;
 			}
 		}
 		img {
