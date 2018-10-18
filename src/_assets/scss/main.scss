@@ -992,7 +992,7 @@ a:hover {
 		}
 	}
 	.slick-list {
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(md){
 			padding: 0 10% 0 0;
 		}
 	}

@@ -5046,7 +5046,9 @@ footer {
     border-bottom: 5px solid #0067c5; }
   .section-resource .row {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .section-case-studies .slick-list {
+    padding: 0 10% 0 0; } }
 
 @media (min-width: 576px) {
   #carouselMasthead .carousel-item .content h2 {
@@ -5074,8 +5076,6 @@ footer {
   .section-advantages .d-flex {
     -ms-flex-direction: column;
     flex-direction: column; }
-  .section-case-studies .slick-list {
-    padding: 0 10% 0 0; }
   .section-free-trial .box .head-section {
     margin-bottom: 1rem; } }
 

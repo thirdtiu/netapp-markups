@@ -40,6 +40,8 @@ $(document).ready(function() {
     nextArrow: '<a class="slick-next"><i class="fas fa-chevron-right"></i></a>',
     infinite: false,
     mobileFirst: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 768,
@@ -49,12 +51,12 @@ $(document).ready(function() {
             }
         },
         {
-            breakpoint: 576,
+            breakpoint: 480,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
-        },
+        }
     ]
   })
 
