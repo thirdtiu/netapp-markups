@@ -4540,8 +4540,7 @@ footer {
 #whitepaperModal .content-1 {
   height: 100%;
   color: #fff;
-  background-color: #0067c5;
-  padding: 50px 30px; }
+  background-color: #0067c5; }
   #whitepaperModal .content-1 h5 {
     text-transform: uppercase;
     font-size: 1rem;
@@ -4563,7 +4562,8 @@ footer {
 
 #whitepaperModal .form-row {
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin-bottom: 1rem; }
   #whitepaperModal .form-row .col {
     -ms-flex-preferred-size: auto;
         flex-basis: auto; }

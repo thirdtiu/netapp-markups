@@ -1287,7 +1287,7 @@ footer {
 		height: 100%;
 		color: #fff;
 		background-color: $blue;
-		padding: 50px 30px;
+		// padding: 50px 30px;
 		@include media-breakpoint-up(lg){
 			padding-right: 250px;
 			background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat $blue;
@@ -1320,6 +1320,7 @@ footer {
 	}
 	.form-row {
 		flex-direction: column;
+		margin-bottom: 1rem;
 		@include media-breakpoint-up(md){
 			flex-direction: row;
 		}
