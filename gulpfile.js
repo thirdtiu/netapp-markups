@@ -137,6 +137,7 @@ gulp.task('webserver', function() {
   gulp.src('./dist/')
     .pipe(webserver({
       directoryListing: false,
+      host: '0.0.0.0',
       livereload: {
         enabled: true
       }, 

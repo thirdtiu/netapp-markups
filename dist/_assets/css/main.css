@@ -4713,9 +4713,9 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   min-height: 64px;
-  padding: 0 20px;
-  letter-spacing: 0.1 .pn-ProductNav_Link.pn-ProductNav_Link;
-    letter-spacing-border-left-color: #eee; }
+  padding: 0 20px; }
+  .pn-ProductNav_Link + .pn-ProductNav_Link {
+    border-left-color: #eee; }
   .pn-ProductNav_Link[aria-selected="true"] {
     color: #111; }
 
