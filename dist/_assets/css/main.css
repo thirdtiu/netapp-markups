@@ -4038,7 +4038,8 @@ a:hover {
     color: #fff;
     width: 100%; }
     #carouselMasthead .carousel-item .mobile-bottom-content .mobile-content {
-      width: 320px; }
+      padding-left: 2rem;
+      padding-right: 2rem; }
   #carouselMasthead .carousel-item .carousel-control-prev, #carouselMasthead .carousel-item .carousel-control-next {
     z-index: 888; }
   #carouselMasthead .carousel-item.carousel-item-1 {

@@ -264,7 +264,9 @@ a:hover {
 			color: #fff;
 			width: 100%;
 			.mobile-content {
-				width: 320px;
+				// width: 320px;
+				padding-left: 2rem;
+				padding-right: 2rem;
 			}
 			@include media-breakpoint-down(md){
 				display: flex !important;
