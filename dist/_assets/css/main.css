@@ -4087,8 +4087,8 @@ a:hover {
       color: #fff;
       -ms-flex-item-align: end;
           align-self: flex-end;
-      padding-bottom: 60px;
-      padding-top: 20px; }
+      padding-bottom: 20px;
+      padding-top: 60px; }
     #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-prev i,
     #carouselMasthead .carousel-item.carousel-item-2 .carousel-control-next i {
       margin-bottom: -66px; }

@@ -389,8 +389,8 @@ a:hover {
 			.content-2 {
 				color: #fff;
 				align-self: flex-end;
-				padding-bottom: 60px;
-				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-top: 60px;
 				@include media-breakpoint-up(lg) {
 					padding-top: 0;
 				}
