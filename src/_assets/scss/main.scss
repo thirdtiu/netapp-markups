@@ -719,11 +719,20 @@ a:hover {
 	.box:first-child .content {
 		text-align: left;
 		@include media-breakpoint-up(md){
+			padding-right: 2rem;
+		}
+		@include media-breakpoint-up(lg){
 			padding-right: 160px;
 		}
 	}
 	.box:last-child .content {
+		
+		
 		@include media-breakpoint-up(md){
+			padding-left: 2rem;
+			color: #fff;
+		}
+		@include media-breakpoint-up(lg){
 			text-align: right;
 			padding-left: 160px;
 			color: #fff;
