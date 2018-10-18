@@ -679,6 +679,7 @@ a:hover {
 		@include media-breakpoint-down(sm){
 			flex-direction: column;
 		}
+		
 	}
 	.box {
 		width: 100%;
@@ -1109,7 +1110,7 @@ a:hover {
 		}
 		p.link {
 			margin-bottom: 0;
-			@media (max-width: 360px){
+			@media (max-width: 480px){
 				font-size: .7rem;
 			}
 			img {

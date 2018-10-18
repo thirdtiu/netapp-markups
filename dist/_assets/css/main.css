@@ -5079,9 +5079,11 @@ footer {
   .section-free-trial .box .head-section {
     margin-bottom: 1rem; } }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .section-free-trial .box p.link {
-    font-size: .7rem; }
+    font-size: .7rem; } }
+
+@media (max-width: 360px) {
   .section-free-trial .box p.link img {
     top: -2px;
     width: 20px; } }
