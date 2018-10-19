@@ -4524,11 +4524,18 @@ footer {
   position: absolute;
   right: 25px;
   top: 25px;
-  z-index: 999; }
+  z-index: 999;
+  width: 30px;
+  height: 33px;
+  background: url(../template-images/img-close-modal-white.png) center no-repeat;
+  background-size: cover;
+  content: ' '; }
 
 #whitepaperModal .modal-dialog {
   width: 90% !important;
-  max-width: 1140px !important; }
+  max-width: 1140px !important;
+  margin-left: auto;
+  margin-right: auto; }
 
 #whitepaperModal .logo {
   margin-bottom: 1.5rem; }
@@ -4999,6 +5006,9 @@ footer {
   .section-free-trial .box {
     padding: 70px 50px;
     width: 50%; }
+  #whitepaperModal .close-modal {
+    background: url(../template-images/img-close-modal.png) center no-repeat;
+    background-size: cover; }
   #whitepaperModal .content {
     padding: 100px 60px; }
   #whitepaperModal .content-1 {

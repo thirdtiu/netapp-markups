@@ -1284,10 +1284,21 @@ footer {
 		right: 25px;
 		top:25px;
 		z-index: 999;
+		width: 30px;
+		height: 33px;
+		background: url(../template-images/img-close-modal-white.png) center no-repeat;
+		background-size: cover;
+		content: ' ';
+		@include media-breakpoint-up(lg){
+			background: url(../template-images/img-close-modal.png) center no-repeat;
+			background-size: cover;
+		}
 	}
 	.modal-dialog {
 		width: 90% !important;
 		max-width: 1140px !important;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.logo {
 		margin-bottom: 1.5rem;
