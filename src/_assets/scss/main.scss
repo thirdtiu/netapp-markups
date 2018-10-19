@@ -743,11 +743,11 @@ a:hover {
 
 // start whitepaper section
 .section-whitepaper {
-	background: url(../template-images/bg-whitepaper-mobile.jpg) bottom right no-repeat;
+	background: url(../template-images/bg-whitepaper-mobile.jpg) right no-repeat;
 	background-size: cover;
 	padding: 40px 0 340px;
-	@include media-breakpoint-up(md){
-		background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
+	@include media-breakpoint-up(lg){
+		background: url(../template-images/bg-whitepaper.jpg) center right no-repeat;
 		background-size: cover;
 		padding: 90px 0;
 	}

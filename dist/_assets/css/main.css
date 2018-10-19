@@ -4236,7 +4236,7 @@ a:hover {
     text-align: left; }
 
 .section-whitepaper {
-  background: url(../template-images/bg-whitepaper-mobile.jpg) bottom right no-repeat;
+  background: url(../template-images/bg-whitepaper-mobile.jpg) right no-repeat;
   background-size: cover;
   padding: 40px 0 340px; }
   .section-whitepaper .box {
@@ -4846,10 +4846,6 @@ footer {
   .section-advantages .box:last-child .content {
     padding-left: 2rem;
     color: #fff; }
-  .section-whitepaper {
-    background: url(../template-images/bg-whitepaper.jpg) center no-repeat;
-    background-size: cover;
-    padding: 90px 0; }
   .section-whitepaper .box {
     width: 50%; }
   .section-webinar .video {
@@ -4994,6 +4990,10 @@ footer {
     text-align: right;
     padding-left: 160px;
     color: #fff; }
+  .section-whitepaper {
+    background: url(../template-images/bg-whitepaper.jpg) center right no-repeat;
+    background-size: cover;
+    padding: 90px 0; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
     background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }
