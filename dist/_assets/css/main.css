@@ -4893,9 +4893,6 @@ footer {
     overflow: hidden; }
   .section-free-trial {
     margin-top: 140px; }
-  .section-free-trial .box {
-    padding: 70px 50px;
-    width: 50%; }
   .section-bottom .box {
     padding: 0 4rem; }
   .section-bottom .box h5 {
@@ -4999,6 +4996,9 @@ footer {
     border-bottom: 10px solid #0067c5; }
   .section-resource .content {
     padding: 2rem 90px; }
+  .section-free-trial .box {
+    padding: 70px 50px;
+    width: 50%; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
     background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }

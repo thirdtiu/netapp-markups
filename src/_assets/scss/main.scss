@@ -1095,7 +1095,7 @@ a:hover {
 		padding: 2rem;
 		width: 100%;
 		background-color: #fff;
-		@include media-breakpoint-up(md){
+		@include media-breakpoint-up(lg){
 			padding: 70px 50px;
 			width: 50%;
 		}
