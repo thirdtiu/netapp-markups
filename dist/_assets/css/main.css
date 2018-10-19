@@ -4538,7 +4538,7 @@ footer {
   padding-right: 0; }
 
 #whitepaperModal .content {
-  padding: 100px 60px; }
+  padding: 4rem 2rem; }
 
 #whitepaperModal .content-1 {
   height: 100%;
@@ -4549,11 +4549,11 @@ footer {
     font-size: 1rem;
     line-height: 1; }
   #whitepaperModal .content-1 h1 {
-    font-size: 2.1875rem;
+    font-size: 1.4rem;
     line-height: 1;
     margin-bottom: 1.5rem; }
   #whitepaperModal .content-1 h3 {
-    font-size: 1.375rem; }
+    font-size: 1.1rem; }
 
 #whitepaperModal .content-2 .note {
   font-size: .8125rem;
@@ -4999,9 +4999,15 @@ footer {
   .section-free-trial .box {
     padding: 70px 50px;
     width: 50%; }
+  #whitepaperModal .content {
+    padding: 100px 60px; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
-    background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }
+    background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; }
+  #whitepaperModal .content-1 h1 {
+    font-size: 2.1875rem; }
+  #whitepaperModal .content-1 h3 {
+    font-size: 1.375rem; } }
 
 @media (max-width: 991.98px) {
   #carouselMasthead .carousel-item .container {
