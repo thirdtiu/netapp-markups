@@ -4284,12 +4284,14 @@ a:hover {
     margin-bottom: 1.5rem; }
 
 .section-resource {
-  padding-top: 160px;
-  padding-bottom: 57px; }
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
   .section-resource .container {
     background: #fff;
-    border-bottom: 10px solid #0067c5; }
-  .section-resource .col-sm:first-child {
+    border-bottom: 5px solid #0067c5; }
+  .section-resource .col-md:first-child {
     padding-left: 0;
     padding-right: 0; }
   .section-resource img {
@@ -4856,10 +4858,6 @@ footer {
     margin-left: 60px; }
   .section-webinar h1 {
     font-size: 2.6875rem; }
-  .section-resource .col-sm:first-child {
-    padding-left: 0; }
-  .section-resource .content {
-    padding: 2rem 90px; }
   .section-resource .content h2 {
     margin: 0 0 .5rem 0;
     font-size: .95rem; }
@@ -4994,6 +4992,13 @@ footer {
     background: url(../template-images/bg-whitepaper.jpg) center right no-repeat;
     background-size: cover;
     padding: 90px 0; }
+  .section-resource {
+    padding-top: 160px;
+    padding-bottom: 57px; }
+  .section-resource .container {
+    border-bottom: 10px solid #0067c5; }
+  .section-resource .content {
+    padding: 2rem 90px; }
   #whitepaperModal .content-1 {
     padding-right: 250px;
     background: url(../template-images/img-whitepaper-modal.png) 90% 150px no-repeat #0067c5; } }
@@ -5046,17 +5051,6 @@ footer {
     flex: 0 0 30%; }
   .section-advantages .box .content .image img {
     width: 50px; }
-  .section-resource {
-    padding-top: 4rem;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-bottom: 2rem; }
-  .section-resource .container {
-    padding: 0;
-    border-bottom: 5px solid #0067c5; }
-  .section-resource .row {
-    margin-left: 0;
-    margin-right: 0; }
   .section-case-studies .slick-list {
     padding: 0 10% 0 0; } }
 
@@ -5086,6 +5080,9 @@ footer {
   .section-advantages .d-flex {
     -ms-flex-direction: column;
     flex-direction: column; }
+  .section-resource img {
+    height: 270px;
+    width: 100%; }
   .section-free-trial .box .head-section {
     margin-bottom: 1rem; } }
 
