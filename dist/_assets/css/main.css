@@ -5039,8 +5039,10 @@ footer {
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(36%, #f6f6f6), color-stop(36%, #007a33), color-stop(100%, #007a33));
     background: linear-gradient(to bottom, #f6f6f6 0%, #f6f6f6 36%, #007a33 36%, #007a33 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#007a33', GradientType=0 ); }
+  .section-advantages .first-row {
+    margin-bottom: 0; }
   .section-advantages .box {
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
   .section-advantages .box .content {
     display: -ms-flexbox;
     display: flex;

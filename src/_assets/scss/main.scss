@@ -676,6 +676,9 @@ a:hover {
 	}
 	.first-row {
 		margin-bottom: 70px;
+		@include media-breakpoint-down(md){
+			margin-bottom: 0;
+		}
 	}
 	.d-flex {
 		@include media-breakpoint-down(sm){
@@ -686,7 +689,7 @@ a:hover {
 	.box {
 		width: 100%;
 		@include media-breakpoint-down(md){
-			margin-bottom: 4rem;
+			margin-bottom: 2rem;
 		}
 		@include media-breakpoint-up(md){
 			width:50%;
