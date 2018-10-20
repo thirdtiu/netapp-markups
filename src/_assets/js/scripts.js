@@ -117,6 +117,35 @@ $(document).ready(function() {
 
 });
 
+// ajax for eloqua form
+$(document).on('submit', '.elq-form', function (e) {
+    var serializedData = $(this).serialize();
+    $.ajax({
+        url: 'https://s1184.t.eloqua.com/e/f2',
+        type: 'post',
+        data: $(this).serialize(),
+        beforeSend: function() {
+            // before sending, add a loading icon
+            $('#download-whitepaper').append(' <i class="fas fa-spinner fa-spin spinner"></i>');
+        },
+        success: function() {
+            $('.elq-form').hide();
+            $('.thank-you').show();
+            $('.elq-form').trigger('reset');
+        },
+        complete: function() {
+            // after submission, remove loading icon
+            $('#download-whitepaper').find('.spinner').remove();
+        }
+    })
+    e.preventDefault();
+})
+
+$('#whitepaperModal').on('hidden.bs.modal', function (e) {
+    $('.thank-you').hide();
+    $('.elq-form').show();
+})
+
 // mobile scroll
 var SETTINGS = {
     navBarTravelling: false,
@@ -394,4 +423,6 @@ function determineOverflow(content, container) {
     }
 
     exports.reset = reset;
+
 }));
+

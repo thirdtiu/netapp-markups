@@ -1490,6 +1490,20 @@ footer {
 
 // end free trial modal
 
+// thank you message after form submission
+.thank-you {
+	display: none;
+	h1 {
+		font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
+		font-size: 3rem;
+		color: $blue;
+		margin-bottom: 1.5rem;
+	}
+	p {
+		margin-bottom: 2rem;
+	}
+}
+
 // youtube modal
 #youtubeModal {
 	.modal-dialog {

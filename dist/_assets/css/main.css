@@ -4661,6 +4661,16 @@ footer {
     -ms-flex-preferred-size: auto;
         flex-basis: auto; }
 
+.thank-you {
+  display: none; }
+  .thank-you h1 {
+    font-family: 'gotham_boldregular', 'gotham_bookregular', 'Open Sans', sans-serif;
+    font-size: 3rem;
+    color: #0067c5;
+    margin-bottom: 1.5rem; }
+  .thank-you p {
+    margin-bottom: 2rem; }
+
 #youtubeModal .modal-dialog {
   max-width: 800px;
   margin: 30px auto; }
