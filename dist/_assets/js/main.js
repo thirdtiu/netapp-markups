@@ -669,5 +669,16 @@ function determineOverflow(content, container) {
 
     exports.reset = reset;
 
+    $('.trackEvent').click(function(){
+        trackEvent($(this).data('category'), $(this).data('label'));
+    })
+
 }));
 
+function trackEvent(cat, label) {
+    console.log(cat, label)
+    gtag('event', 'outlink', {
+        'event_category': cat,
+        'event_label': label
+    });
+}
